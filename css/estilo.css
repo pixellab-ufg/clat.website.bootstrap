@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body{
+    padding-top: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+
+section{
+    margin: 2em;
+    padding-top: 2em;
+}
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .areasColor, .area, .row, .container, .container-fluid, .col{
+        margin: 0;
+        padding: 0;
+        border:none;
+    }
+
+    
+        .navbar .navbar-nav {
+            display: inline-block;
+            float: none;
+            vertical-align: top;
+            
+        }
+    
+        .navbar .navbar-collapse {
+            text-align: center;
+            margin: 2em;
+    
+            
+        }
+    
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .areasColor, .area, .row, .container, .container-fluid, .col{
+        margin: 0;
+        padding: 0;
+        border:none;
+    }
+
+   
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+        margin: 2em;
+    }
+}
+
+
+
+.areasColor{
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+}
+
+#sobre{
+    background-color: #84CC01;
+    /*font-family: 'Poppins', sans-serif;*/
+
+}
+
+#menu a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: transparent; 
+    padding-left: 1em;
+
+    
+
+}
+
+#menu li a:hover {
+    border-bottom: 3px solid #F359B3;
+    color: #F68C02;
+}
+  
+#menu a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none; }
+    #menu a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+      color: inherit;
+      text-decoration: none; }
+      #menu a:not([href]):not([tabindex]):focus {
+      outline: 0; }
+  
+
+
+.titulo{
+    color: #2EA1B7;
+    
+}
+
+.footer{
+    /*background-color: #2EA1B7;
+    color:white;*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.texto-clat{
+    color:#F359B3;
+    letter-spacing: 0.2em;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+h2,h3,h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-top:1em;
+}
+
+h5,h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-top:0.5em;
+}
+
+#publicacoes{
+    background-color: #F88E01;
+}
+
+.area{
+    background-color: white;
+    padding:3em;
+    margin:2em;
+}
+
+.laranja{
+    color:#F88D02;
+}
