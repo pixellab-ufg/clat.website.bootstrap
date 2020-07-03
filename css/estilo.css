@@ -14,12 +14,6 @@ section{
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
-    .areasColor, .area, .row, .container, .container-fluid, .col{
-        margin: 0;
-        padding: 0;
-        border:none;
-    }
-
     
         .navbar .navbar-nav {
             display: inline-block;
@@ -39,12 +33,6 @@ section{
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-
-    .areasColor, .area, .row, .container, .container-fluid, .col{
-        margin: 0;
-        padding: 0;
-        border:none;
-    }
 
    
     .navbar .navbar-nav {
@@ -137,10 +125,10 @@ h5,h6{
     background-color: #F88E01;
 }
 
-.area{
+.areaBranca{
     background-color: white;
-    padding:3em;
-    margin:2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .laranja{
