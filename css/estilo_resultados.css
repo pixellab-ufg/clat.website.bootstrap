@@ -1,0 +1,119 @@
+.circle{
+    margin: 0 0.5rem;
+    float: left;
+    z-index: 1000;
+   
+    animation-duration: 3s; /* don't forget to set a duration! */
+    transition: transform .2s;
+    text-align: center;
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+
+}
+
+.text_circle{
+    /*color: #333333;*/
+    color: #FFFFFF;
+    text-shadow: 2px 2px 2px BLACK;
+    /*-webkit-text-stroke: 0.5px black;*/
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+.text_circle_black{
+    color: #333333;
+    font-weight: 800;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 2px white;
+    margin-bottom: 2em;
+
+}
+
+#sul .text_circle_black{
+
+    margin-bottom: 3.5em;
+
+}
+
+#sudeste .text_circle_black {
+
+    margin-bottom: 4.5em;
+
+}
+
+
+#norte{
+    background-color: #F88E01;
+    left: 30%;
+    top: 25%;
+    width: 0.5em;
+    height: 0.5em;
+    position: absolute;
+    
+}
+
+#nordeste{
+    background-color: #F88E01;
+    left: 80%;
+    top: 30%;
+    width: 1.2em;
+    height: 1.2em;
+    position: absolute;
+    
+
+}
+
+#centro-oeste{
+    background-color: #F359B3;
+    left: 40%;
+    top: 40%;
+    width: 9em;
+    height: 9em;
+    position: absolute;
+
+}
+
+
+#sudeste{
+    background-color: #84CC01;
+    left: 65%;
+    bottom: 22%;
+    width: 4em;
+    height: 4em;
+    position: absolute;
+
+}
+
+#sul{
+    background-color: #84CC01 ;
+    left: 50%;
+    bottom: 14%;
+    width: 3em;
+    height: 3em;
+    position: absolute;
+}
+
+
+.circle:hover{
+    transform: scale(1.5);
+
+}
+
+.mapa{
+    width: 100%;
+    height: auto;
+    padding: .5rem;
+    position: relative;
+    background-color:  #52D7D5;
+    
+}
+
+.painel{
+    display:flex;
+    max-width: 700px;
+}
+
+
+
+  
