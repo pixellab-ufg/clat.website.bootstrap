@@ -1,119 +1,453 @@
-.circle{
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .linha {
+        min-width: 65%;
+    }
+    .linha:before {
+        width: 65%;
+    }
+    #sul .text_circle_black, #sudeste .text_circle_black {
+        margin-bottom: 2em;
+    }
+
+    #norte .text_circle_black, #nordeste .text_circle_black{
+        margin-bottom: 1.2em;
+    }
+
+    #norte {
+        left: 30%;
+        top: 25%;
+        width: 0.2em;
+        height: 0.2em;
+    }
+    #nordeste {
+        left: 80%;
+        top: 30%;
+        width: 0.5em;
+        height: 0.5em;
+    }
+    #centro-oeste {
+        left: 40%;
+        top: 30%;
+        width: 5em;
+        height: 5em;
+    }
+    #sudeste {
+        left: 65%;
+        top: 70%;
+        width: 1.2em;
+        height: 1.2em;
+    }
+    #sul {
+        background-color: #84CC01;
+        left: 50%;
+        top: 85%;
+        width: 1em;
+        height: 1em;
+        position: absolute;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .linha {
+        min-width: 50%;
+    }
+    .linha:before {
+        width: 50%;
+    }
+    #sul .text_circle_black {
+        margin-bottom: 3em;
+    }
+    #sudeste .text_circle_black {
+        margin-bottom: 3em;
+    }
+    #norte {
+        left: 30%;
+        top: 25%;
+        width: 0.5em;
+        height: 0.5em;
+    }
+    #nordeste {
+        left: 80%;
+        top: 30%;
+        width: 1em;
+        height: 1em;
+    }
+    #centro-oeste {
+        left: 40%;
+        top: 44%;
+        width: 8em;
+        height: 8em;
+    }
+    #sudeste {
+        left: 65%;
+        top: 70%;
+        width: 2.2em;
+        height: 2.2em;
+    }
+    #sul {
+        left: 50%;
+        top: 85%;
+        width: 2em;
+        height: 2em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    /*mudar o mapa*/
+    .linha {
+        min-width: 50%;
+    }
+    .linha:before {
+        width: 50%;
+    }
+    #sul .text_circle_black {
+        margin-bottom: 3em;
+    }
+    #sudeste .text_circle_black {
+        margin-bottom: 3em;
+    }
+    #norte {
+        left: 30%;
+        top: 25%;
+        width: 0.5em;
+        height: 0.5em;
+    }
+    #nordeste {
+        left: 80%;
+        top: 30%;
+        width: 1em;
+        height: 1em;
+    }
+    #centro-oeste {
+        left: 45%;
+        top: 35%;
+        width: 8em;
+        height: 8em;
+    }
+    #sudeste {
+        left: 65%;
+        top: 63%;
+        width: 2.2em;
+        height: 2.2em;
+    }
+    #sul {
+        left: 50%;
+        top: 75%;
+        width: 2em;
+        height: 2em;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    #sul .text_circle_black {
+        margin-bottom: 3em;
+    }
+    #sudeste .text_circle_black {
+        margin-bottom: 3em;
+    }
+    #norte {
+        left: 30%;
+        top: 25%;
+        width: 0.5em;
+        height: 0.5em;
+    }
+    #nordeste {
+        left: 80%;
+        top: 30%;
+        width: 1em;
+        height: 1em;
+    }
+    #centro-oeste {
+        left: 40%;
+        top: 40%;
+        width: 8em;
+        height: 8em;
+    }
+    #sudeste {
+        left: 65%;
+        top: 70%;
+        width: 2.2em;
+        height: 2.2em;
+    }
+    #sul {
+        left: 50%;
+        top: 85%;
+        width: 2em;
+        height: 2em;
+    }
+
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 80vh;
+    width: 80vw;
+  }
+
+}
+
+p {
+    font-size: 1.2em;
+}
+
+  
+
+#tipoEscola{
+    width: 100%;
+}
+
+.circle {
     margin: 0 0.5rem;
     float: left;
     z-index: 1000;
-   
-    animation-duration: 3s; /* don't forget to set a duration! */
+    animation-duration: 3s;
+    /* don't forget to set a duration! */
     transition: transform .2s;
     text-align: center;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     display: flex;
-
 }
 
-.text_circle{
-    /*color: #333333;*/
+#norte {
+    background-color: #F88E01;
+    position: absolute;
+}
+
+#nordeste {
+    background-color: #F88E01;
+    position: absolute;
+}
+
+#centro-oeste {
+    background-color: #F92D82;
+    /* width: 8em;
+    height: 8em; */
+    position: absolute;
+}
+
+#sudeste {
+    background-color: #84CC01;
+    position: absolute;
+}
+
+#sul {
+    background-color: #84CC01;
+    position: absolute;
+}
+
+.titulo-grafico {
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    margin:0px;
+}
+
+.espaco {
+    margin-top: 4em;
+}
+
+.texto-explicativo {
+    font-size: 1.2em;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+.text_circle {
     color: #FFFFFF;
-    text-shadow: 2px 2px 2px BLACK;
-    /*-webkit-text-stroke: 0.5px black;*/
+    /* text-shadow: 2px 2px 2px BLACK; */
     font-weight: 800;
     font-size: 1.2em;
 }
 
-.text_circle_black{
+.lazul {
+    background-color: #2AA2A0;
+}
+
+.lazul:before {
+    background-color: #2AA2A0;
+    content: 'PERFIL DOS PARTICIPANTES';
+}
+
+.lverde {
+    background-color: #6AA300;
+}
+
+.lverde:before {
+    background-color: #6AA300;
+    content: 'COMENTÁRIOS';
+}
+
+.llaranja {
+    background-color: #F06C00;
+}
+
+.llaranja:before {
+    background-color: #F06C00;
+    content: 'DIFICULDADES';
+}
+
+.linha {
+    /* min-width: 50%; */
+    height: 3px;
+    border: none;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    position: relative;
+}
+
+.linha:before {
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 1.2em;
+    display: block;
+    /* width: 50%; */
+    padding: 0.3em;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    /* #F8F9FA;*/
+    transform: translate(-50%, -50%);
+}
+
+.lrosa {
+    background-color: #F92D82;
+    margin-top: 10em;
+}
+
+.lrosa:before {
+    background-color: #F92D82;
+    content: 'ATIVIDADES REMOTAS';
+}
+
+.text_circle_black {
     color: #333333;
     font-weight: 800;
     font-size: 1.2em;
-    text-shadow: 2px 2px 2px white;
+    /* text-shadow: 2px 2px 2px white; */
     margin-bottom: 2em;
-
 }
 
-#sul .text_circle_black{
-
-    margin-bottom: 3.5em;
-
+.circle:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s linear;
 }
 
-#sudeste .text_circle_black {
+.tippy-tooltip.custom-theme {
+    background-color: white;
+    color: #333;
+    font-size: 1.2em;
+    border-color: white;
+    box-shadow: 2px 2px 2px #F2F2F2;
+    padding: 0.3em;
+  }
 
-    margin-bottom: 4.5em;
-
+  /* Right placement tooltip arrow (arrow will be on left side of tooltip) */
+.tippy-popper[x-placement^=right] .tippy-tooltip.custom-theme .tippy-arrow {
+    border-right: 7px solid white; /* your color here */
 }
 
-
-#norte{
-    background-color: #F88E01;
-    left: 30%;
-    top: 25%;
-    width: 0.5em;
-    height: 0.5em;
-    position: absolute;
-    
+/* Left placement tooltip arrow (arrow will be on right side of tooltip) */
+.tippy-popper[x-placement^=left] .tippy-tooltip.custom-theme .tippy-arrow {
+    border-left: 7px solid white; /* your color here */
 }
 
-#nordeste{
-    background-color: #F88E01;
-    left: 80%;
-    top: 30%;
-    width: 1.2em;
-    height: 1.2em;
-    position: absolute;
-    
-
+/* Top placement tooltip arrow (arrow will be on bottom side of tooltip) */
+.tippy-popper[x-placement^=top] .tippy-tooltip.custom-theme .tippy-arrow {
+    border-top: 7px solid white; /* your color here */
 }
 
-#centro-oeste{
-    background-color: #F359B3;
-    left: 40%;
-    top: 40%;
-    width: 9em;
-    height: 9em;
-    position: absolute;
-
+/* Bottom placement tooltip arrow (arrow will be on top side of tooltip) */
+.tippy-popper[x-placement^=bottom] .tippy-tooltip.custom-theme .tippy-arrow {
+    border-bottom: 7px solid white; /* your color here */
 }
 
 
-#sudeste{
-    background-color: #84CC01;
-    left: 65%;
-    bottom: 22%;
-    width: 4em;
-    height: 4em;
-    position: absolute;
 
-}
-
-#sul{
-    background-color: #84CC01 ;
-    left: 50%;
-    bottom: 14%;
-    width: 3em;
-    height: 3em;
-    position: absolute;
-}
-
-
-.circle:hover{
-    transform: scale(1.5);
-
-}
-
-.mapa{
+.mapa {
     width: 100%;
     height: auto;
     padding: .5rem;
     position: relative;
-    background-color:  #52D7D5;
-    
+    background-color: #52D7D5;
 }
 
-.painel{
-    display:flex;
+.painel {
+    display: flex;
     max-width: 700px;
 }
 
+.dados[title]:hover:after{
+    content: attr(title);
+    background: white; 
+    position: absolute;
+    font-size: 1.2em;
+    left: 20%;
+    top: 10%;
+    width: 10em;
+    height: 1.5em;;
+border-radius: 25px;
+box-shadow: 2px 2px 2px gray;
+text-align: center;
+vertical-align: middle;
+}
 
+.example-twitter {
+    position: relative;
+    padding: 15px;
+    /*margin:100px 0 0.5em;*/
+    margin: 2em 1em;
+    color: #333;
+    background: #fff;
+    /* css3 */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
 
-  
+.example-twitter p {
+    /*font-size:20px;*/
+    line-height: 1.25em;
+}
+
+/* this isn't necessary, just saves me having to edit the HTML of the demo */
+
+.example-twitter:before {
+    /*content:url(twitter-logo.gif);*/
+    position: absolute;
+    top: -60px;
+    left: 0;
+    /*width:155px;*/
+    /*height:36px;*/
+    /* reduce the damage in FF3.0 */
+    display: block;
+}
+
+/* creates the triangle */
+
+.example-twitter:after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50px;
+    border: 15px solid transparent;
+    border-bottom-color: #fff;
+    /* reduce the damage in FF3.0 */
+    display: block;
+    width: 0;
+}
