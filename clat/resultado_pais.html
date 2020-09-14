@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>
+        Pesquisa com Responsáveis
+    </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="clat/images/favicon.svg" type="image/x-icon">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Animate CSS import-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+
+
+    <!--css-->
+    <link rel="stylesheet" href="css/estilo_resultados.css">
+    <link rel="stylesheet" href="clat/css/estilo.css">
+
+
+    <!--Javascript Chart.js-->
+
+    <!--<script type="text/javascript" src="https://cdnjs.com/libraries/Chart.js"></script>-->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-deferred"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#menu" data-offset="0">
+
+    <nav id="menu" class="navbar navbar-expand-md navbar-light bg-light justify-content-end fixed-top">
+        <a class="navbar-brand pl-5" href="index.html">
+            <img src="clat/images/logoLetras.png" width="20%" height="auto" alt="CLAT" loading="lazy">
+        </a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#equipe">Equipe</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#pesquisa">Pesquisa com Usuários</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#publicacoes">Publicações</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contato">Contato</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+
+                <h1 class="text-center ">Pesquisa com mães, pais ou responsáveis</h1>
+                <p class="texto-explicativo"> No período de <strong>abril a junho</strong> de 2020, realizamos uma
+                    pesquisa on-line com
+                    pais e responsáveis por crianças de 4 a 7 anos de idade para entender a experiência de ensino remoto
+                    com crianças em fase inicial de escrita. Recebemos a contribuição de 119 pessoas. Nessa página,
+                    resumimos os dados coletados. </p>
+            </div>
+
+        </div>
+
+        <hr class="linha lazul">
+
+        <div class="row espaco">
+            <div class="col-md-12 col-lg-4 col-xl-6">
+                <h4>Regiões do país</h4>
+                <p>Embora tenhamos representatividade de todas as regiões do país, a maior participação foi de pessoas
+                    residentes na região centro-oeste, aproximadamente 69% do total de respondentes. </p>
+                <p> Como a Universidade Federal de Goiás é localizada na região centro-oeste, acreditamos que a
+                    divulgação, embora on-line, tenha sido mais intensa entre os grupos de pais e responsáveis dessa
+                    região.
+
+            </div>
+            <div class="col-md-12 col-lg-8 col-xl-6">
+                <img src="images/mapa_brasil.svg" class="img-fluid animate__animated animate__fadeIn"
+                    alt="mapa do Brasil">
+                <div class="rounded-circle circle animate__animated animate__zoomInDown" id="norte"><span
+                        class="text_circle_black">1%</span></div>
+                <div class="rounded-circle circle animate__animated animate__zoomInDown " id="nordeste"><span
+                        class="text_circle_black">5%</span></div>
+                <div class="rounded-circle circle animate__animated animate__zoomInDown" id="centro-oeste"><span
+                        class="text_circle">69%</span></div>
+                <div class="rounded-circle circle animate__animated animate__zoomInDown" id="sudeste"><span
+                        class="text_circle_black">13%</span></div>
+                <div class="rounded-circle circle animate__animated animate__zoomInDown dados" id="sul">
+                    <span class="text_circle_black">12%</span>
+
+                    <!-- data-placement="top" data-original-title="Hello world"><span class="tooltip-qm">?</span></div> -->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row espaco">
+            <div class="col-lg-6">
+                <p class="titulo-grafico">REDE DE ENSINO</p>
+                <canvas id="tipoEscola" width="800" height="600"></canvas>
+            </div>
+            <div class="col-lg-6">
+                <h4>Escola</h4>
+                <p>Questionamos em qual rede a criança estuda, pública ou privada. A maioria das crianças estudam na
+                    rede
+                    particular (67%). </p>
+                <p>Algumas responderam na opção "Outras" que a criança frequenta escola filantrópica
+                    e ainda, duas pessoas indicaram que as crianças não frequentam nenhuma escola.</p>
+            </div>
+        </div>
+
+        <div class="row espaco">
+            <div class="col-lg-6">
+                <h4>Ano escolar</h4>
+                <p>Nosso interesse é quanto ao público infantil em fase inicial de escrita. Por isso, engloba diferentes
+                    níveis de ensino, desde educação infantil ao 3º ano do ensino fundamental. </p>
+                <p>A maioria dos respondentes têm crianças na Educação Infantil (61%), seguido por crianças de 1º ano
+                    (24%). </p>
+            </div>
+
+            <div class="col-lg-6">
+                <p class="titulo-grafico">NÍVEL</p>
+                <canvas id="anoEscolar" width="800" height="600"></canvas>
+
+            </div>
+        </div>
+
+
+        <hr class="linha lrosa">
+
+        <div class="row">
+            <div class="col-md-12 col-lg-4">
+                <h4>Manutenção de atividades durante a pandemia</h4>
+                <p> Perguntamos para mães, pais e responsáveis se as escolas estavam mantendo atividades escolares
+                    remotas.De
+                    maneira geral, aproximadamente 76% dos respondentes indicaram que a escola manteve as atividades.
+                </p>
+                <p> Ao analisarmos separadamente a rede pública e privada, os dados apresentam diferença significativa.
+                </p>
+                <br> <br>
+            </div>
+            <div class="col-md-12 col-lg-8">
+                <br>
+                <p class="titulo-grafico">REDE PÚBLICA E PRIVADA</p>
+                <canvas id="atividadesRemotas" width="800" height="600"></canvas>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <p class="titulo-grafico">REDE PÚBLICA</p>
+                <canvas id="atividadesRemotasPub" width="800" height="600"></canvas>
+            </div>
+
+            <div class="col-md-12 col-lg-6">
+                <br> <br>
+                <p>Dos responsáveis que preencheram a pesquisa e que as crianças estudam em escola pública, apenas 36%
+                    estavam recebendo atividades remotas, contra 64% que não, pois as escolas não estavam ofertando esse
+                    tipo de atividade.
+                </p>
+                <br> <br>
+            </div>
+        </div>
+
+        <div class="row espaco">
+            <div class="col-md-12 col-lg-6">
+                <p class="titulo-grafico">REDE PRIVADA</p>
+                <canvas id="atividadesRemotasPri" width="800" height="600"></canvas>
+            </div>
+
+            <div class="col-md-12 col-lg-6">
+
+                <br> <br>
+                <p> Das crianças que estudam em rede privada, 96% dos responsáveis estavam recebendo atividades
+                    escolares e apenas 4% das escolas não estavam ofertando ensino remoto. </p>
+            </div>
+        </div>
+
+        <div class="row espaco">
+            <div class="col">
+                <br>
+                <h4>Recursos e Conteúdos </h4>
+                <p> Para saber mais detalhes sobre como estão sendo realizadas as atividades de alfabetização no período
+                    da COVID-19, questionamos sobre recursos, formato de conteúdo e modo de avaliação apenas aos que
+                    responderam que as atividaes remotas estavam ocorrendo na escola da criança. </p>
+                <br>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+                <br>
+                <p style="font-size:0.8em;">Nessa pergunta era possível escolher várias alternativas.</p>
+                <h5 style="margin-top: 0;">Que recursos digitais estão sendo usados para comunicação entre professores,
+                    pais e crianças?</h5>
+                <canvas id="recursos" width="800" height="400"></canvas>
+                <br>
+                <p> Conforme as respostas das mães, pais e responsáveis, <strong>o recurso mais usado pelas escolas são
+                        redes sociais</strong>, como Whatsapp, Facebook e Instagram. Em seguida, o uso de Ambientes
+                    Virtuais de Aprendizagem (AVA), como Google Classroom, Edmodo, Moodle, entre outros. Plataformas de
+                    vídeo (Youtube e Vimeo) também configuram como um recurso bastante utilizado. </p>
+                <p>O e-mail também é citado com frequência, além de sites e blogs e pastas compartilhadas na nuvem, como
+                    Google Drive, Dropbox e One Drive. Na opção "Outros" foram citados o Microsoft Teams e também uma
+                    plataforma própria da escola.</p>
+
+            </div>
+        </div>
+
+        <div class="row espaco">
+            <div class="col">
+                <br>
+                <h5>Qual o formato de conteúdo está sendo adotado com mais frequência?</h5>
+                <canvas id="conteudos" width="800" height="400"></canvas>
+                <br>
+                <p>Nessa pergunta, diferente da anterior, apenas uma opção deveria ser selecionada. O principal formato
+                    de conteúdo é <strong>vídeo gravado</strong>, ou seja, de maneira assíncrona os professores gravam
+                    aulas e enviam às crianças. Na sequência, o envio de tarefas impressas está sendo adotado por muitas
+                    escolas e outras optaram por realização de aulas ao vivo (on-line). O livro didático também surge
+                    como uma opção de conteúdo nesse período. </p>
+                <p>Entre os itens menos citados estão o uso de material para leitura e áudio gravado. Na opção "Outros",
+                    uma pessoa descreveu "pequenos vídeos com propostas de brincadeiras, contação de estórias" e outra
+                    que a escola fazia um misto de todos os formatos de conteúdos. </p>
+
+            </div>
+        </div>
+
+        <div class="row espaco">
+            <div class="col-lg-12">
+                <h4>Avaliação durante a pandemia</h4>
+            <p> Perguntamos como o(a) professor(a) corrige ou avalia as atividades feitas pela criança durante a
+                pandemia. </p>
+            </div>
+            
+            <div class="col-md-12 col-lg-6">
+                <p>A maioria dos responsáveis indicou que enviam <strong>foto da atividade</strong> ou a atividade
+                    digitalizada por redes sociais. </p>
+
+                <p>Porém, também foi significativa a quantidade de respostas sobre a <strong>não avaliação docente
+                        dessas atividades</strong>, pelo menos no entendimento de mães, pais e responsáveis. </p>
+                <p>Alguns indicaram que a correção é realizada na própria plataforma. </p>
+                <p>Na opção "Outros", uma pessoa
+                    mencionou que entrega as atividades fisicamente na escola e outra que quando a criança quer
+                    responder, grava áudio e envia no grupo da turma no Whatsapp. </p>
+            </div>
+
+            <div class="col-md-12 col-lg-6 espaco">
+                <p class="titulo-grafico">CORREÇÃO DE ATIVIDADES</p>
+
+                <canvas id="avaliacao" width="800" height="800"></canvas>
+            </div>
+
+            
+            
+        </div>
+
+
+        <hr class="linha llaranja">
+
+        <div class="row">
+            <div class="col">
+                <p> Perguntamos a todos os respondentes se são observadas dificuldades ou desafios durante esse período
+                    remoto. No caso dos participantes que indicaram que as escolas não estão ofertando atividades
+                    remotas, pedimos que respondessem a sua perspectiva sobre o cenário, caso a escola passasse a adotar
+                    essa estratégia.
+                </p> <br>
+                <h5>Você identifica dificuldades para a realização de atividades remotas pela criança nesse período?
+                </h5>
+                <canvas id="dificuldades" width="800" height="400"></canvas>
+                <br>
+                <p>A maioria absoluta indicou que a principal dificuldade é a <strong>dependência de um adulto </strong>
+                    para a realização das atividades. Como são crianças pequenas, usualmente as mães, pais ou
+                    responsáveis precisam dedicar um tempo expressivo para explicar à criança o que precisa ser feito e
+                    acompanhar o processo. </p>
+                <p>A não comunicação direta entre professores e crianças também surge como uma possível dificuldade,
+                    principalmente durante a realização de atividades assíncronas. Na sequência, a dificuldade em
+                    restringir o
+                    acesso a meios digitais apenas para fins de estudo durante a atividade escolar e a falta de
+                    avaliação ou correção pelo(a) professor(a). </p>
+                <p>Aproximadamente <strong>13% dos participantes indicaram que não há dificuldades</strong>. Alguns
+                    responsáveis indicaram como dificuldade a necessidade de acesso das crianças a redes sociais
+                    (Whatsapp, Facebook e etc), visto que muitas delas não acessavam esse meio e ficam expostas a outros
+                    conteúdos. </p>
+                <p>Outras pessoas relataram a diculdade de comunicação entre os diferentes profissionais que atuam com a
+                    criança, como psicólogos, fonoaudiólogos, psicopedagogos e professores. Em "Outros", duas pessoas
+                    escreveram que as crianças não frequentam escola e outra que a maior dificuldade é manter a criança
+                    concentrada e motivada para as atividades remotas.</p>
+
+
+            </div>
+        </div>
+
+        <hr class="linha lverde">
+        <div class="row">
+            <div class="col">
+                <p>Oferecemos um espaço não-obrigatório para que mães, pais ou responsáveis comentassem abertamente
+                    sobre como está sendo o período escolar durante a pandemia de COVID-19. </p>
+            </div>
+        </div>
+
+
+        <div class="row espaco" style="background-color:#f2f2f2">
+            <d class="row">
+                <div class="col-xs-12 col-md-4 col-lg-3">
+                    <blockquote class="example-twitter">
+                        <p>Estou gostando. Mas a escola presencial é essencial.</p>
+                    </blockquote>
+                </div>
+
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                    <blockquote class="example-twitter">
+                        <p>Muito embora estejamos no início da quarentena, não recebemos ainda nenhuma atividade remota
+                            para minha filha, apenas kit (em papel) com exercícios para realização de atividades.
+                            Imagino
+                            que as redes ainda estão tomando as primeiras iniciativas em desenvolver as atividades
+                            remotamente.</p>
+                    </blockquote>
+                </div>
+
+
+                <div class="col-xs-12 col-md-4  col-lg-3">
+                    <blockquote class="example-twitter">
+                        <p>Falta de um AVA específico para criança.</p>
+                    </blockquote>
+                </div>
+
+                <div class="col-xs-12 col-md-6  col-lg-6">
+                    <blockquote class="example-twitter">
+                        <p>É complicado tanto para os pais quanto para os educadores, mas vejo que não pode ser de outra
+                            maneira. Precisamos manter as aulas nem que seja de forma remota.</p>
+                    </blockquote>
+                </div>
+
+
+                <div class="col-xs-12 col-md-6  col-lg-6">
+                    <blockquote class="example-twitter">
+                        <p>O ensino à distância com crianças não está adaptado a realidade e faixa etária deles. Ficam
+                            horas
+                            em frente ao computador, com exercícios pouco interativos e que despertem interesse. Tem
+                            sido
+                            difícil acompanhar e motivar minha filha.</p>
+                    </blockquote>
+                </div>
+
+                <div class="col-xs-12 col-md-6  col-lg-6">
+                    <blockquote class="example-twitter">
+                        <p>Educação infantil e fundamental I deveriam ter todas as aulas repostas, mesmo que assistidas
+                            on
+                            line. Não estamos preparados para e um dia para o outro termos o ambiente adequado para que
+                            a
+                            criança se dedique o aprendizado de maneira virtual...</p>
+                    </blockquote>
+                </div>
+
+                <div class="col-xs-12 col-md-6  col-lg-4">
+                    <blockquote class="example-twitter">
+                        <p>É desafiador para os pais nesse momento. Mas acredito que é o melhor a ser feito considerando
+                            a
+                            situação global.</p>
+                    </blockquote>
+                </div>
+
+                <div class="col-xs-12 col-md-6  col-lg-6">
+                    <blockquote class="example-twitter">
+                        <p>Estão passando muito mais tarefas e trabalhos do que o normal, eu estou em casa, sou
+                            professora(
+                            faço
+                            meus vídeos ) e tenho paciência de pra ensinar minha filha, mas e aquelas mães q trabalham
+                            em
+                            serviçoes essenciais? Como estão dando suporte aos filhos com tantas atividades?</p>
+                    </blockquote>
+                </div>
+
+                <div class="col-xs-12 col-md-6  col-lg-4">
+                    <blockquote class="example-twitter">
+                        <p>Uma educação de qualidade para todos depende muito mais do estado investir apesar dos
+                            esforços
+                            dos professores em ajudar.</p>
+                    </blockquote>
+                </div>
+                <div class="col-xs-12 col-md-6  col-lg-4">
+                    <blockquote class="example-twitter">
+                        <p>Estamos vivendo um cenário novo. Mas acredito que as escolas não estão solicitando opinião
+                            das
+                            famílias quanto à quantidade, finalidade, objetivos e horários para as atividades remotas.
+                            Uma
+                            pena!
+                        </p>
+                    </blockquote>
+                </div>
+
+                <div class="col-xs-12 col-md-6  col-lg-4">
+                    <blockquote class="example-twitter">
+                        <p>Deve-se considerar que nem todos os pais estão aptos e tem tempo para acompanhar as crianças
+                            nas
+                            atividades e nem todas as crianças tem acesso à internet, computadores ou mesmo o hábito de
+                            realizarem atividades em computadores.
+                        </p>
+                    </blockquote>
+                </div>
+
+                <div class="col-xs-12 col-md-6  col-lg-4">
+                    <blockquote class="example-twitter">
+                        <p>Por ser tudo muito novo, ainda estamos tentando nos ajustar a esta nova necessidade. Achei
+                            que a
+                            escola demorou muito a fazer contato com as famílias, embora eu tbm compreende que os
+                            professores foram atrás de formação para iniciar este acompanhamento. Aprendemos todos (e
+                            juntos).
+                        </p>
+                    </blockquote>
+                </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5"></script>
+
+    <!--tooltip js-->
+    <script>
+        tippy('#sudeste', {
+            content: '<strong>Sudeste</strong><br> 16 pessoas',
+            theme: 'custom',
+            maxWidth: 350,
+            placement: "right-start",
+        });
+
+        tippy('#sul', {
+            content: '<strong>Sul</strong><br> 14 pessoas',
+            theme: 'custom',
+            maxWidth: 350,
+            placement: "right-start",
+        });
+
+        tippy('#nordeste', {
+            content: '<strong>Nordeste</strong><br> 6 pessoas',
+            theme: 'custom',
+            maxWidth: 350,
+            placement: "right-start",
+        });
+
+        tippy('#norte', {
+            content: '<strong>Norte</strong><br> 1 pessoa',
+            theme: 'custom',
+            maxWidth: 350,
+            placement: "right-start",
+        });
+
+        tippy('#centro-oeste', {
+            content: '<strong>Centro-oeste</strong><br> 82 pessoas',
+            theme: 'custom',
+            maxWidth: 350,
+            placement: "top",
+        });
+
+
+    </script>
+
+
+    <script src="clat/js/graficos_pais.js"></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
