@@ -1,0 +1,209 @@
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+   
+    #sulp .text_circle_black, #sudestep .text_circle_black {
+        margin-bottom: 2em;
+    }
+
+    #nortep .text_circle_black, #nordestep .text_circle_black{
+        margin-bottom: 1.2em;
+    }
+
+    #nortep {
+        left: 30%;
+        top: 25%;
+        width: 0.2em;
+        height: 0.2em;
+    }
+    #nordestep {
+        left: 80%;
+        top: 30%;
+        width: 0.5em;
+        height: 0.5em;
+    }
+    #centro-oestep {
+        left: 50%;
+        top: 40%;
+        width: 2.5em;
+        height: 2.5em;
+    }
+    #sudestep {
+        left: 65%;
+        top: 60%;
+        width: 2.5em;
+        height: 2.5em;
+    }
+    #sulp {
+        background-color: #84CC01;
+        left: 50%;
+        top: 85%;
+        width: 1em;
+        height: 1em;
+        position: absolute;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+  
+    #sulp .text_circle_black {
+        margin-bottom: 3em;
+    }
+    #sudestep .text_circle_black {
+        margin-bottom: 3em;
+    }
+    #nortep {
+        left: 30%;
+        top: 25%;
+        width: 0.5em;
+        height: 0.5em;
+    }
+    #nordestep {
+        left: 80%;
+        top: 30%;
+        width: 1em;
+        height: 1em;
+    }
+    #centro-oestep {
+        left: 40%;
+        top: 44%;
+        width: 4em;
+        height: 4em;
+    }
+    #sudestep {
+        left: 65%;
+        top: 70%;
+        width: 4em;
+        height: 4em;
+    }
+    #sulp {
+        left: 50%;
+        top: 85%;
+        width: 2em;
+        height: 2em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+   
+    #sulp .text_circle_black {
+        margin-bottom: 3em;
+    }
+    #sudestep .text_circle_black {
+        margin-bottom: 3em;
+    }
+    #nortep {
+        left: 30%;
+        top: 25%;
+        width: 0.5em;
+        height: 0.5em;
+    }
+    #nordestep {
+        left: 80%;
+        top: 30%;
+        width: 1em;
+        height: 1em;
+    }
+    #centro-oestep {
+        left: 45%;
+        top: 35%;
+        width: 4em;
+        height: 4em;
+    }
+    #sudestep {
+        left: 65%;
+        top: 63%;
+        width: 4em;
+        height: 4em;
+    }
+    #sulp {
+        left: 50%;
+        top: 75%;
+        width: 2em;
+        height: 2em;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    #sulp .text_circle_black {
+        margin-bottom: 3em;
+    }
+    #sudestep .text_circle_black {
+        margin-bottom: 3em;
+    }
+    #nortep {
+        left: 30%;
+        top: 25%;
+        width: 0.5em;
+        height: 0.5em;
+    }
+    #nordestep {
+        left: 80%;
+        top: 30%;
+        width: 1em;
+        height: 1em;
+    }
+    #centro-oestep {
+        left: 50%;
+        top: 45%;
+        width: 3.5em;
+        height: 3.5em;
+    }
+    #sudestep {
+        left: 65%;
+        top: 65%;
+        width: 3.5em;
+        height: 3.5em;
+    }
+    #sulp {
+        left: 50%;
+        top: 80%;
+        width: 2em;
+        height: 2em;
+    }
+
+
+
+}
+
+#nortep {
+    background-color: #F88E01;
+    position: absolute;
+}
+
+#nordestep {
+    background-color: #F88E01;
+    position: absolute;
+}
+
+#centro-oestep {
+    background-color: #F92D82;
+    /* width: 8em;
+    height: 8em; */
+    position: absolute;
+}
+
+#sudestep {
+    background-color: #2AA2A0;
+    position: absolute;
+}
+
+#sulp {
+    background-color: #84CC01;
+    position: absolute;
+}
+
+.lista{
+    font-size: 1.2em;
+}

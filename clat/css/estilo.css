@@ -5,6 +5,7 @@ body {
     font-size: 1.2em;
 }
 
+
 section {
     margin: 2em;
     padding-top: 2em;
@@ -117,7 +118,11 @@ h5, h6 {
     padding-top: 0.5em;
 }
 
-#publicacoes {
+
+#pesquisa{
+    background-color: #F359B3;
+}
+#midia{
     background-color: #F88E01;
 }
 
