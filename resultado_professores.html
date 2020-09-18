@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="shortcut icon" href="clat/images/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
 
 
     <!-- Bootstrap CSS -->
@@ -24,7 +24,7 @@
     <!--css-->
     <link rel="stylesheet" href="css/estilo_resultados.css">
     <link rel="stylesheet" href="css/estilo_resultados_profe.css">
-    <link rel="stylesheet" href="clat/css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
 
 
     <!--Javascript Chart.js-->
@@ -52,8 +52,8 @@
 <body data-spy="scroll" data-target="#menu" data-offset="0">
 
     <nav id="menu" class="navbar navbar-expand-md navbar-light bg-light justify-content-end fixed-top">
-        <a class="navbar-brand pl-5" href="index.html">
-            <img src="clat/images/logoLetras.png" width="20%" height="auto" alt="CLAT" loading="lazy">
+        <a class="navbar-brand pl-5" href="../index.html">
+            <img src="images/logoLetras.png" width="20%" height="auto" alt="CLAT" loading="lazy">
         </a>
         <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,21 +64,21 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#sobre">Sobre</a>
+                    <a class="nav-link" href="../index.html#sobre">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#equipe">Equipe</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#pesquisa">Pesquisa com Usuários</a>
+                    <a class="nav-link" href="../index.html#equipe">Equipe</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#publicacoes">Publicações</a>
+                    <a class="nav-link" href="../index.html#pesquisa">Pesquisa com Usuários</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#publicacoes">Publicações</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#contato">Contato</a>
+                    <a class="nav-link" href="../index.html#contato">Contato</a>
                 </li>
 
             </ul>
@@ -112,21 +112,23 @@
                 <canvas id="genero" width="600" height="450"></canvas>
             </div>
             <div class="col-lg-6">
-                <h4>Gênero</h4>
+                <p class="titulos__grafico_descricao">Gênero</p>
                 <p>Entre as pessoas que responderam, a maioria é dó público feminino (94%), 5% masculino e uma pessoa se
                     declarou não-binária (outros).
                     Uma pessoa respondeu "Outras", se declarando não-binária.</p>
             </div>
 
+        </div>
+
+        <div class="row espaco">
             <div class="col-lg-4">
 
-                <h4>Faixa etária</h4>
+                <p class="titulos__grafico_descricao">Faixa etária</p>
                 <p>Quanto às idades, a maioria dos respondentes têm entre 26 e 46 anos (72%). Na sequênia, a faixa
                     etária de 47 a 55 (19%). Além destes, 4 pessoas com menos de 26 anos e 6 com mais de 55 anos.</p>
             </div>
 
             <div class="col-lg-8">
-                <br> <br>
                 <p class="titulo-grafico text-center"> FAIXA ETÁRIA</p>
                 <canvas id="idades" width="600" height="300"></canvas>
             </div>
@@ -155,7 +157,7 @@
             </div>
 
             <div class="col-md-12 col-lg-4 col-xl-6">
-                <h4>Regiões do país</h4>
+                <p class="titulos__grafico_descricao">Regiões do país</p>
                 <p>Questionamos em quais regiões o(a) profissional já atuou. Usamos as redes sociais e grupos de
                     mensageiros instantâneos para contato com profissionais de alfabetização. </p>
                 <p>No meio digital, há mais grupos públicos de professores das regiões centro-oeste e sudeste. Por isso,
@@ -169,7 +171,7 @@
 
         <div class="row espaco">
             <div class="col-lg-6">
-                <h4>Nível escolar</h4>
+                <p class="titulos__grafico_descricao">Nível Escolar</p>
                 <p>A maioria dos respondentes têm especialização (64%), seguido por ensino superior (22%) e mestrado
                     (11%).</p>
             </div>
@@ -190,7 +192,7 @@
             </div>
 
             <div class="col-lg-6">
-                <h4>Tempo de Atuação</h4>
+                <p class="titulos__grafico_descricao">Tempo de Atuação</p>
                 <p>Questionamos há quanto tempo os participantes atuavam com crianças em fase de alfabetização. A
                     maioria dos respondentes atua de 5 a 10 anos (37%). </p>
             </div>
@@ -202,7 +204,7 @@
 
         <div class="row">
             <div class="col-md-12 col-lg-4">
-                <h4>Ditados de Palavras</h4>
+                <p class="titulos__grafico_descricao">Ditados de Palavras</p>
                 <p> Perguntamos para os profissionais se eles aplicavam ditados de palavras para as crianças. A maioria,
                     cerca de 83% dos participantes, respondeu que sim. Aproximadamente 17% deles indicaram que não
                     aplicam esse tipo de atividade.
@@ -217,7 +219,7 @@
         <div class="row espaco">
             <div class="col">
                 <br>
-                <h4>Ditado Individual</h4>
+                <p class="titulos__grafico_descricao">Ditado Individual</p>
                 <p> Aos profissionais que confirmaram aplicar ditados de palavras com crianças, questionamos se quando a
                     atividade era individual eles selecionavam uma lista de palavras para ditar ou se questionavam o que
                     a criança preferia escrever. </p>
@@ -229,9 +231,8 @@
 
         <div class="row">
             <div class="col">
-                <br>
                 <!--<p style="font-size:0.8em;">Nessa pergunta era possível escolher várias alternativas.</p>-->
-                <h5 style="margin-top: 0;">Quando você aplica ditados individuais, preferencialmente...</h5>
+                <p class="titulos__grafico_pergunta">Quando você aplica ditados individuais, preferencialmente...</p>
                 <canvas id="individual" width="800" height="200"></canvas>
                 <br>
                 <p> Aproximadamente 61% dos participantes indicaram que preferem, na maioria das vezes, ditar um
@@ -244,8 +245,8 @@
 
         <div class="row espaco">
             <div class="col">
-                <br>
-                <h5>No seu planejamento, em média, quanto tempo você destina para sessões de ditados individuais?</h5>
+                <p class="titulos__grafico_pergunta">No seu planejamento, em média, quanto tempo você destina para
+                    sessões de ditados individuais?</p>
                 <canvas id="tempoIndividual" width="800" height="300"></canvas>
                 <br>
                 <p>Percebe-se que a maioria dos profissionais indica destinar até 30 minutos para realização dos ditados
@@ -258,7 +259,8 @@
             <div class="col">
                 <br>
                 <p style="font-size:0.8em;">Nessa pergunta era possível escolher até 3 alternativas.</p>
-                <h5>Você considera como desafios na aplicação de ditados individuais:</h5>
+                <p class="titulos__grafico_pergunta">Você considera como desafios na aplicação de ditados individuais:
+                </p>
                 <canvas id="desafiosIndividual" width="800" height="500"></canvas>
                 <br>
                 <p>Nessa pergunta os participantes poderiam escolher até três opções indicadas como dificuldades ou
@@ -276,15 +278,17 @@
             <div class="col">
                 <br>
                 <p style="font-size:0.8em;">Essa pergunta era discursiva.</p>
-                <h5>O que você considera mais importante observar durante a sessão de ditado com a criança?</h5>
+                <p class="titulos__grafico_pergunta">O que você considera mais importante observar durante a sessão de
+                    ditado com a criança?</p>
                 <br>
                 <div id="container" style="width:100%; height:400px; "></div>
-                <p>As respostas dos profissionais foram diversas, como é possível ver na nuvem de palavras acima. No entanto, destacamos que a maioria descreve o quanto é importante observar quais letras foram
-                escolhidas, a quantidade de letras usadas, o som que elas percebem (consciência fonológica) e a
-                pronúncia, ou seja, como repetem o som. </p>
+                <p>As respostas dos profissionais foram diversas, como é possível ver na nuvem de palavras acima. No
+                    entanto, destacamos que a maioria descreve o quanto é importante observar quais letras foram
+                    escolhidas, a quantidade de letras usadas, o som que elas percebem (consciência fonológica) e a
+                    pronúncia, ou seja, como repetem o som. </p>
                 <p>Também, houve menção sobre a necessidade de analisar como as crianças percebem a construção das
-                palavras, o que elas apagam durante a tentativa de escrita e principalmente, a maneira e direção
-                como fazem a leitura, tocando com o dedo no papel. </p>
+                    palavras, o que elas apagam durante a tentativa de escrita e principalmente, a maneira e direção
+                    como fazem a leitura, tocando com o dedo no papel. </p>
             </div>
         </div>
 
@@ -296,8 +300,7 @@
                     questionamos como eles avaliam a escrita delas.
                 </p>
 
-                <h5>Como você avalia a escrita das crianças?
-                </h5>
+                <p class="titulos__grafico_pergunta">Como você avalia a escrita das crianças?</p>
                 <div id="avaliacaoEscrita" style="width:100%; height:400px;"></div>
                 <p> Conforme ilustrado na nuvem de palavras acima, o tipo de avaliação individual foi citada com
                     frequência. Porém, esses profissionais indicaram o uso de recursos diferenciados para solicitar o
@@ -334,8 +337,7 @@
             </div>
 
             <div class="col-12">
-                <br>
-                <h5>Você classifica a escrita da criança de alguma maneira?</h5>
+                <p class="titulos__grafico_pergunta">Você classifica a escrita da criança de alguma maneira?</p>
                 <canvas id="erro" width="800" height="400"></canvas>
                 <br>
                 <p>Percebe-se que entre os níveis de classificação baseados na Psicogênese da Língua Escrita, da autora
@@ -351,7 +353,7 @@
         <div class="row">
 
             <div class="col-md-12 col-lg-4">
-                <h4>Manutenção das atividades</h4>
+                <p class="titulos__grafico_descricao">Manutenção das atividades</p>
                 <p> Perguntamos para os profissionais se eles mantiveram as atividades de alfabetização de maneira
                     remota com as crianças. Dos respondentes, aproximadamente 73% indicou que as atividades foram
                     mantidas. </p>
@@ -372,7 +374,8 @@
                     escrita das crianças de maneira remota.
                 </p>
 
-                <h5>Durante o período de pandemia, como você está avaliando ou avaliou a escrita das crianças?</h5>
+                <p class="titulos__grafico_pergunta">Durante o período de pandemia, como você está avaliando ou avaliou
+                    a escrita das crianças?</p>
                 <br>
                 <div id="periodoRemoto" style="width:100%; height:400px;"></div>
                 <p> Conforme ilustrado na nuvem de palavras mais citadas, a maioria dos profissionais indicou que, mesmo
@@ -541,7 +544,7 @@
     </script>
 
 
-    <script src="clat/js/graficos_professores.js"></script>
+    <script src="js/graficos_professores.js"></script>
 
 
     <!-- Optional JavaScript -->
