@@ -137,7 +137,7 @@
 
         <div class="row espaco">
 
-            <div class="col-md-12 col-lg-8 col-xl-6">
+            <div class="col-md-12 col-lg-8 col-xl-6" id="mapa">
                 <img src="images/mapa_brasil.svg" class="img-fluid animate__animated animate__fadeIn"
                     alt="mapa do Brasil">
                 <div class="rounded-circle circle animate__animated animate__zoomInDown" id="nortep"><span
@@ -171,7 +171,7 @@
 
         <div class="row espaco">
             <div class="col-lg-6">
-                <p class="titulos__grafico_descricao">Nível Escolar</p>
+                <p class="titulos__grafico_descricao">Nível escolar</p>
                 <p>A maioria dos respondentes têm especialização (64%), seguido por ensino superior (22%) e mestrado
                     (11%).</p>
             </div>
@@ -192,7 +192,7 @@
             </div>
 
             <div class="col-lg-6">
-                <p class="titulos__grafico_descricao">Tempo de Atuação</p>
+                <p class="titulos__grafico_descricao">Tempo de atuação</p>
                 <p>Questionamos há quanto tempo os participantes atuavam com crianças em fase de alfabetização. A
                     maioria dos respondentes atua de 5 a 10 anos (37%). </p>
             </div>
@@ -204,7 +204,7 @@
 
         <div class="row">
             <div class="col-md-12 col-lg-4">
-                <p class="titulos__grafico_descricao">Ditados de Palavras</p>
+                <p class="titulos__grafico_descricao">Ditados de palavras</p>
                 <p> Perguntamos para os profissionais se eles aplicavam ditados de palavras para as crianças. A maioria,
                     cerca de 83% dos participantes, respondeu que sim. Aproximadamente 17% deles indicaram que não
                     aplicam esse tipo de atividade.
@@ -219,7 +219,7 @@
         <div class="row espaco">
             <div class="col">
                 <br>
-                <p class="titulos__grafico_descricao">Ditado Individual</p>
+                <p class="titulos__grafico_descricao">Ditado individual</p>
                 <p> Aos profissionais que confirmaram aplicar ditados de palavras com crianças, questionamos se quando a
                     atividade era individual eles selecionavam uma lista de palavras para ditar ou se questionavam o que
                     a criança preferia escrever. </p>
@@ -231,7 +231,6 @@
 
         <div class="row">
             <div class="col">
-                <!--<p style="font-size:0.8em;">Nessa pergunta era possível escolher várias alternativas.</p>-->
                 <p class="titulos__grafico_pergunta">Quando você aplica ditados individuais, preferencialmente...</p>
                 <canvas id="individual" width="800" height="200"></canvas>
                 <br>
@@ -258,7 +257,7 @@
         <div class="row espaco">
             <div class="col">
                 <br>
-                <p style="font-size:0.8em;">Nessa pergunta era possível escolher até 3 alternativas.</p>
+                <p class="graficos__info">Nessa pergunta era possível escolher até 3 alternativas.</p>
                 <p class="titulos__grafico_pergunta">Você considera como desafios na aplicação de ditados individuais:
                 </p>
                 <canvas id="desafiosIndividual" width="800" height="500"></canvas>
@@ -277,11 +276,11 @@
         <div class="row espaco">
             <div class="col">
                 <br>
-                <p style="font-size:0.8em;">Essa pergunta era discursiva.</p>
+                <p class="graficos__info">Essa pergunta era discursiva.</p>
                 <p class="titulos__grafico_pergunta">O que você considera mais importante observar durante a sessão de
                     ditado com a criança?</p>
                 <br>
-                <div id="container" style="width:100%; height:400px; "></div>
+                <div id="container" class="nuvemPalavras"></div>
                 <p>As respostas dos profissionais foram diversas, como é possível ver na nuvem de palavras acima. No
                     entanto, destacamos que a maioria descreve o quanto é importante observar quais letras foram
                     escolhidas, a quantidade de letras usadas, o som que elas percebem (consciência fonológica) e a
@@ -301,7 +300,7 @@
                 </p>
 
                 <p class="titulos__grafico_pergunta">Como você avalia a escrita das crianças?</p>
-                <div id="avaliacaoEscrita" style="width:100%; height:400px;"></div>
+                <div id="avaliacaoEscrita" class="nuvemPalavras"></div>
                 <p> Conforme ilustrado na nuvem de palavras acima, o tipo de avaliação individual foi citada com
                     frequência. Porém, esses profissionais indicaram o uso de recursos diferenciados para solicitar o
                     registro da escrita infantil, não apenas o uso da fala (ditado). Por exemplo, foram citados uso de
@@ -377,7 +376,7 @@
                 <p class="titulos__grafico_pergunta">Durante o período de pandemia, como você está avaliando ou avaliou
                     a escrita das crianças?</p>
                 <br>
-                <div id="periodoRemoto" style="width:100%; height:400px;"></div>
+                <div id="periodoRemoto" class="nuvemPalavras"></div>
                 <p> Conforme ilustrado na nuvem de palavras mais citadas, a maioria dos profissionais indicou que, mesmo
                     com a manutenção de atividades remotas, não estavam avaliando a escrita das crianças ainda. Outros,
                     por sua vez, falaram sobre uso de atividades impressas e envio de fotografias pelos familiares.
@@ -401,7 +400,7 @@
         </div>
 
 
-        <div class="row espaco" style="background-color:#f2f2f2">
+        <div class="row espaco fundo__claro">
             <div class="row">
                 <div class="col-xs-12 col-md-4 col-lg-4">
                     <blockquote class="example-twitter">
@@ -543,8 +542,8 @@
 
     </script>
 
-
     <script src="js/graficos_professores.js"></script>
+
 
 
     <!-- Optional JavaScript -->

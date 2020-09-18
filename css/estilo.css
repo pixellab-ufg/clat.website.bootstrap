@@ -135,3 +135,26 @@ h5, h6 {
 .laranja {
     color: #F88D02;
 }
+
+.titulos__grafico_descricao{
+    font-size: 2em;
+}
+
+.titulos__grafico_pergunta{
+    /*font-size: 1.5em;*/
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+.fundo__claro{
+    background-color:#f2f2f2;
+}
+
+.graficos__info{
+    font-size:0.8em;
+}
+
+.nuvemPalavras{
+    width:100%; 
+    height:400px;
+}
