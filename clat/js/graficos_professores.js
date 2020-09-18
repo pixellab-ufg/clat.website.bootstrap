@@ -931,6 +931,7 @@ var desafiosIndividual = new Chart(ctx, {
  * NUVEM DE PALAVRAS
  * DITADO DE PALAVRAS
  */
+anychart.licenseKey("fabrizziosoares.me-5132aa16-b19d68be");
 
 anychart.onDocumentReady(function () {
   var data = [
