@@ -231,6 +231,8 @@ h5, h6 {
 .nomes{
     font-size: 1.2em;
     font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 0;
 }
 
 .titulo__card{
@@ -241,11 +243,6 @@ h5, h6 {
     color: #107abc;
 }
 
-
-
 .fundo__azul{
     background-color: #107abc;
-    color: white;
-    font-size: 1.2em;
-    font-weight: 600;
 }
