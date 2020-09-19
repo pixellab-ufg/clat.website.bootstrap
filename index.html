@@ -25,7 +25,7 @@
 
     <div class="container">
 
-        <nav id="menu" class="navbar navbar-expand-md navbar-light bg-light justify-content-end fixed-top">
+        <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light justify-content-end fixed-top ">
             <a class="navbar-brand pl-5" href="#">
                 <img src="clat/images/logoLetras.png" width="20%" height="auto" alt="CLAT" loading="lazy">
             </a>
@@ -39,21 +39,21 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
+                        <a class="nav-link menu" href="#sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#equipe">Equipe</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#pesquisa">Pesquisa com Usuários</a>
+                        <a class="nav-link menu" href="#equipe">Equipe</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#publicacoes">Publicações</a>
+                        <a class="nav-link menu" href="#pesquisa">Pesquisa com usuários</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu" href="#publicacoes">Publicações</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
+                        <a class="nav-link menu" href="#contato">Contato</a>
                     </li>
 
                 </ul>
@@ -62,11 +62,17 @@
         </nav>
     </div>
 
-    <section id="main">
-        <div class="container d-flex justify-content-end h-100">
-            <div class="row no-gutters align-items-center ">
+
+    <section id="main" >
+       <div class="container-fluid d-flex justify-content-end">
+            <div class="row no-gutters align-items-center">
                 <!--<div class="col-lg-4 col-md col-sm capa">-->
-                <div class="col-lg-4 capa text-right">
+                <div class="col-lg-6 col-md-12">
+                    <img class="img-responsive imagem__principal" src="clat/images/desenho.svg"
+                        alt="figura de tablet">
+                </div>
+
+                <div class="col-lg-6 col-md-12 text-left texto__principal">
                     <p class="texto-clat"> CHILDREN LITERACY AID TOOL</p>
                     <h1>Avaliação da escrita infantil</h1>
                     <p>Pesquisa desenvolvida pelo PixelLab, no Doutorado em Ciência da Computação do Instituto de
@@ -74,11 +80,6 @@
                         condução de sessões automatizadas de ditado de palavras para crianças em fase inicial de
                         alfabetização. </p>
 
-                </div>
-
-                <div class="col-lg-8">
-                    <img class="img-responsive" width="100%" style="max-width: 800px;" src="clat/images/desenho.svg"
-                        alt="">
                 </div>
 
             </div>
@@ -96,7 +97,7 @@
                     <p>O projeto <i>Children Literacy Aid Tool</i> (CLAT) surge como uma proposta de uso da tecnologia
                         para auxiliar o processo de alfabetização infantil, especialmente na avaliação da escrita.</p>
 
-                    <h3>História</h3>
+                    <h2>História</h2>
                     <p>No Pacto Nacional na Idade Certa (PNAIC), algumas Secretarias Municipais de Educação optaram por
                         acompanhar o desenvolvimento do programa a partir de avaliações periódicas da escrita das
                         crianças.
@@ -117,7 +118,7 @@
                         uma atividade cotidiana em salas de alfabetização. </p>
 
 
-                    <h3>Nossa Proposta</h3>
+                    <h2>Nossa Proposta</h2>
                     <p>Estamos desenvolvendo um método para que as avaliações de escrita - tradicionalmente realizadas
                         em papel - possam ser feitas em um ambiente digital. Assim, o especialista cria sessões de
                         ditado, define a lista de palavras e a aplicação dita essas palavras para a criança. </p>
@@ -147,7 +148,7 @@
                         <img src="clat/images/jaline.jpeg" alt="foto Jaline" width="150" height="150"
                             class="img-responsive img-thumbnail rounded-circle">
                     </div>
-                    <h5>Jaline Mombach</h5>
+                    <p class="nomes">Jaline Mombach</p>
                     <p>Doutoranda</p>
 
                     </i><a href="http://www.jaline.me" target="blank"> <i class="fa fa-globe-americas"
@@ -163,7 +164,7 @@
                         <img src="clat/images/fabrizzio.png" alt="foto Fabrizzio" width="150" height="150"
                             class="img-responsive img-thumbnail rounded-circle">
                     </div>
-                    <h5>Fabrizzio Soares</h5>
+                    <p class="nomes">Fabrizzio Soares</p>
                     <p>Professor Orientador</p>
                     </i><a href="http://fabrizziosoares.me" target="blank"> <i class="fa fa-globe-americas"
                             aria-hidden="true"> </i> fabrizziosoares.me</a>
@@ -182,25 +183,22 @@
     <div class="container-fluid">
 
         <div class="row bg-light">
-            <h3 class="mx-auto" style="margin-bottom: 1em;">Apoio</h3>
+            <h2 class="mx-auto margin__baixo">Apoio</h2>
         </div>
 
         <div class="row text-center align-items-center d-flex flex-row justify-content-center bg-light">
             <div class="d-flex justify-content-center">
-                <img class="img-responsive" style="max-width: 120px; margin:1em;" width=100%
-                    src="clat/images/Logo_PixelLab_header.png" alt="">
+                <img class="img-responsive logo__imagem" src="clat/images/Logo_PixelLab_header.png" alt="logo Pixellab">
             </div>
 
             <div class="d-flex justify-content-center">
                 <a href="https://www.cepae.ufg.br/" target="_blank">
-                    <img class="img-responsive " style="max-width: 100px; margin:1em;" width=100%
-                        src="clat/images/cepae.png" alt="logo CEPAE">
+                    <img class="img-responsive logo__imagem" src="clat/images/cepae.png" alt="logo CEPAE">
                 </a>
             </div>
             <div class="d-flex justify-content-center">
                 <a href="https://www.inf.ufg.br/" target="_blank">
-                    <img class="img-responsive" style="max-width: 120px; margin:1em;" width=100%
-                        src="clat/images/inf.png" alt="logo INF">
+                    <img class="img-responsive logo__imagem" src="clat/images/inf.png" alt="logo do Instituto de Informática">
                 </a>
             </div>
 
@@ -223,9 +221,10 @@
                     <p> Aos profissionais, o nosso objetivo foi entender como ocorrem as atividades de escrita infantil
                         e, principalmente, como são feitas as avaliações de escrita infantil. </p>
 
-                    <h3>Confira a síntese das pesquisas: </h3>
-                    <h4><a href="clat/resultado_professores.html">Pesquisa com profissionais</a> </h4>
-                    <h4><a href="clat/resultado_pais.html">Pesquisa com mães, pais ou responsáveis</a></h4>
+                    <p class="nomes">Confira a síntese das pesquisas nas páginas abaixo: </p>
+                    <i class="fas fa-mouse iconeLink"></i><a href="clat/resultado_professores.html" class="pesquisas"> Pesquisa com profissionais</a>
+                    <br>
+                    <i class="fas fa-mouse iconeLink"></i><a href="clat/resultado_pais.html" class="pesquisas"> Pesquisa com mães, pais ou responsáveis</a></p>
                     <br>
                 </div>
             </div>
@@ -265,7 +264,7 @@
 
             </ul>
 
-            <h3>Artigos aceitos</h3> <br />
+            <h2>Artigos aceitos</h2> <br />
             <ul class="listas">
                 <li>
                     MOMBACH, Jaline; FONSECA, Afonso; NASCIMENTO, Thamer; RODRIGUES, Welington; GRESSLER,
@@ -292,14 +291,14 @@
 
                 <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
                     <div class="card mx-auto h-100">
-                        <img class="card-img-top img-fluid mx-auto d-block img-thumbnail"
+                        <img class="card-img-top img-fluid mx-auto d-block img-thumbnail imagem__card"
                             src="https://files.cercomp.ufg.br/weby/up/1218/o/20190215_141719_(1).jpg"
-                            style="max-height: 200px; width:auto; margin-top:1em;" alt="Criança no tablet">
+                            alt="Criança no tablet">
                         <div class="card-body">
-                            <h5 class="card-title text-center"><a
+                            <h2 class="card-title titulo__card"><a
                                     href="https://inf.ufg.br/n/127164-doutoranda-do-inf-ufg-cria-prototipo-para-auxiliar-na-alfabetizacao-de-criancas"
-                                    style="color: black;">Doutoranda do INF-UFG cria protótipo para auxiliar na
-                                    alfabetização de crianças </a></h5>
+                                    >Doutoranda do INF-UFG cria protótipo para auxiliar na
+                                    alfabetização de crianças </a></h2>
                             <p class="card-text">Pesquisadora do INF fala sobre o seu estudo em
                                 tecnologias
                                 para alfabetização com foco em avaliações de escrita. Orientada pelo professor
@@ -315,15 +314,14 @@
 
                 <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
                     <div class="card mx-auto h-100">
-                        <img class="card-img-top img-fluid mx-auto d-block img-thumbnail"
+                        <img class="card-img-top img-fluid mx-auto d-block img-thumbnail imagem__card"
                             src="https://files.cercomp.ufg.br/weby/up/243/o/Inf_UFG.png"
-                            style="max-height: 200px; width:auto; margin-top:1em;" alt="imagem do app">
+                            alt="imagem do app">
                         <div class="card-body">
-                            <h5 class="card-title text-center"><a
-                                    href="https://jornal.ufg.br/n/127223-pesquisa-da-ufg-cria-tecnologia-para-auxiliar-na-alfabetizacao-de-criancas"
-                                    style="color: black;">Pesquisa da UFG cria tecnologia para auxiliar na
+                            <h2 class="card-title titulo__card"><a
+                                    href="https://jornal.ufg.br/n/127223-pesquisa-da-ufg-cria-tecnologia-para-auxiliar-na-alfabetizacao-de-criancas">Pesquisa da UFG cria tecnologia para auxiliar na
                                     alfabetização
-                                    de crianças </a></h5>
+                                    de crianças </a></h2>
                             <p class="card-text">Com o foco inicial na aprendizagem e,
                                 especialmente, na
                                 avaliação da escrita de crianças em fase de alfabetização, a tecnologia
@@ -338,14 +336,13 @@
 
                 <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
                     <div class="card mx-auto h-100">
-                        <img class="card-img-top img-fluid mx-auto d-block img-thumbnail"
-                            src="clat/images/programa_cet.svg" style="max-height: 200px; width:auto; margin-top:1em;"
+                        <img class="card-img-top img-fluid mx-auto d-block img-thumbnail imagem__card"
+                            src="clat/images/programa_cet.svg"
                             alt="imagem do app">
                         <div class="card-body">
-                            <h5 class="card-title text-center"><a
-                                    href="https://redenacionalderadio.com.br/programas/ciencia-e-tecnologia/13-07-20-beatriz-evaristo-c-t-ferramenta-alfabetizacao.mp3/view"
-                                    style="color: black;"> 13/07 - Pesquisadora da UFG cria ferramenta para
-                                    avaliar desenvolvimento da escrita de alunos em alfabetização</a></h5>
+                            <h2 class="card-title titulo__card"><a
+                                    href="https://redenacionalderadio.com.br/programas/ciencia-e-tecnologia/13-07-20-beatriz-evaristo-c-t-ferramenta-alfabetizacao.mp3/view"> 13/07 - Pesquisadora da UFG cria ferramenta para
+                                    avaliar desenvolvimento da escrita de alunos em alfabetização</a></h2>
                             <p class="card-text">Avaliar o desenvolvimento da escrita de cada
                                 aluno
                                 durante a alfabetização pode ser uma tarefa trabalhosa para educadores...</p>
@@ -366,7 +363,7 @@
 
     <div class="container areasColor mx-auto" id="contato">
         <div class="row areaBranca d-flex justify-content-center">
-            <div class="col" style="max-width: 600px;">
+            <div class="col post">
 
                 <form name="contato" method="POST" data-netlify="true" method="post">
                     <div class="card rounded-0">

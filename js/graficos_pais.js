@@ -24,7 +24,7 @@ var tipoEscola = new Chart(ctx, {
     labels: ["Privada", "Pública", "Outra"],
     datasets: [
       {
-        backgroundColor: ["#FF5297", "#F06C00", "#6AA300"],//["#F88E01", "#F359B3", "#84CC01"], // ["#f28900", "#e8309b", "#84CC01"],
+        backgroundColor: ["#e0004f", "#fa6400", "#1b8406"],//["#F88E01", "#F359B3", "#84CC01"], // ["#f28900", "#e8309b", "#84CC01"],
         data: [80, 36, 3]
       }
     ]
@@ -118,7 +118,7 @@ var anoEscolar = new Chart(ctx, {
     labels: ["Ed. Infantil", "1º ano", "2º ano", "3º ano"],
     datasets: [
       {
-        backgroundColor: '#2AA2A0', //["#F88E01", "#F359B3", "#84CC01", "#52D7D5"],
+        backgroundColor: '#107abc', //["#F88E01", "#F359B3", "#84CC01", "#52D7D5"],
         data: [73, 29, 14, 3]
       }
     ]
@@ -228,7 +228,7 @@ var manteve = new Chart(ctx, {
     labels: ["Sim", "Não", ""],
     datasets: [
       {
-        backgroundColor: ["#6AA300", "#d3d3d3"],
+        backgroundColor: ["#1b8406", "#d3d3d3"],
         data: [90, 29]
       }
     ]
@@ -430,7 +430,7 @@ var mantevePri = new Chart(ctx, {
     labels: ["Sim", "Não", ""],
     datasets: [
       {
-        backgroundColor: ["#6AA300", "#d3d3d3"],
+        backgroundColor: ["#1b8406", "#d3d3d3"],
         data: [77, 3]
       }
     ]
@@ -535,7 +535,7 @@ var recursos = new Chart(ctx, {
     datasets: [
       {
         label: "Recursos",
-        backgroundColor: '#F06C00',//["#F88E01", "#F359B3", "#84CC01", "#52D7D5", "#3E474E", "#3E474E", "#3E474E"],
+        backgroundColor: '#fa6400',//["#F88E01", "#F359B3", "#84CC01", "#52D7D5", "#3E474E", "#3E474E", "#3E474E"],
         data: [50, 45, 39, 14, 8, 6, 2]
       },
     ]
@@ -657,7 +657,7 @@ var conteudos = new Chart(ctx, {
     datasets: [
       {
         label: "Conteúdos",
-        backgroundColor: '#FF5297',//["#F88E01", "#F359B3", "#84CC01", "#52D7D5", "#3E474E", "#3E474E", "#3E474E"],
+        backgroundColor: '#e0004f',//["#F88E01", "#F359B3", "#84CC01", "#52D7D5", "#3E474E", "#3E474E", "#3E474E"],
         data: [30, 22, 18, 15, 2, 1, 2]
       },
     ]
@@ -776,7 +776,7 @@ var avaliacao = new Chart(ctx, {
     labels: ["Foto", "Não está \n avaliando", "Plataforma", "Outra"],
     datasets: [
       {
-        backgroundColor: ["#FF5297", "#F06C00", "#6AA300", "#2AA2A0"],//["#F88E01", "#F359B3", "#84CC01"], // ["#f28900", "#e8309b", "#84CC01"],
+        backgroundColor: ["#e0004f", "#fa6400", "#1b8406", "#107abc"],//["#F88E01", "#F359B3", "#84CC01"], // ["#f28900", "#e8309b", "#84CC01"],
         data: [38, 36, 14, 2]
       }
     ]
@@ -870,7 +870,7 @@ var dificuldades = new Chart(ctx, {
     datasets: [
       {
         label: "Conteúdos",
-        backgroundColor: '#5F9300',//["#F88E01", "#F359B3", "#84CC01", "#52D7D5", "#3E474E", "#3E474E", "#3E474E"],
+        backgroundColor: '#1b8406',//["#F88E01", "#F359B3", "#84CC01", "#52D7D5", "#3E474E", "#3E474E", "#3E474E"],
         data: [81, 35, 18, 18, 16, 14, 12, 3]
       },
     ]

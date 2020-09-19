@@ -25,7 +25,7 @@ var genero = new Chart(ctx, {
     labels: ["Feminino", "Masculino", "Outro"],
     datasets: [
       {
-        backgroundColor: ["#FF5297", "#F06C00", "#6AA300"],//["#F88E01", "#F359B3", "#84CC01"], // ["#f28900", "#e8309b", "#84CC01"],
+        backgroundColor: ["#e0004f", "#fa6400", "#1b8406"],//["#F88E01", "#F359B3", "#84CC01"], // ["#f28900", "#e8309b", "#84CC01"],
         data: [98, 5, 1]
       }
     ]
@@ -250,7 +250,7 @@ var anoEscolar = new Chart(ctx, {
     labels: ["Até Ensino Médio", "Ensino Superior", "Especialização", "Mestrado", "Doutorado"],
     datasets: [
       {
-        backgroundColor: '#2AA2A0', //["#F88E01", "#F359B3", "#84CC01", "#52D7D5"],
+        backgroundColor: '#107abc', //["#F88E01", "#F359B3", "#84CC01", "#52D7D5"],
         data: [2, 23, 67, 11, 1],
       }
     ]
@@ -362,7 +362,7 @@ var tempoAtuacao = new Chart(ctx, {
     labels: ["Menos de 5 anos", "5 a 10 anos", "11 a 20 anos", "Mais de 20 anos"],
     datasets: [
       {
-        backgroundColor: '#F06C00', //["#F88E01", "#F359B3", "#84CC01", "#52D7D5"],
+        backgroundColor: '#fa6400', //["#F88E01", "#F359B3", "#84CC01", "#52D7D5"],
         data: [28, 38, 22, 16],
       }
     ]
@@ -474,7 +474,7 @@ var ditados = new Chart(ctx, {
     labels: ["Sim", "Não", ""],
     datasets: [
       {
-        backgroundColor: ["#6AA300", "#d3d3d3"],
+        backgroundColor: ["#1b8406", "#d3d3d3"],
         data: [86, 18]
       }
     ]
@@ -578,7 +578,7 @@ var individual = new Chart(ctx, {
     datasets: [
       {
         label: "Recursos",
-        backgroundColor: '#F06C00',//["#F88E01", "#F359B3", "#84CC01", "#52D7D5", "#3E474E", "#3E474E", "#3E474E"],
+        backgroundColor: '#fa6400',//["#F88E01", "#F359B3", "#84CC01", "#52D7D5", "#3E474E", "#3E474E", "#3E474E"],
         data: [61, 17, 8]
       },
     ]
@@ -700,7 +700,7 @@ var tempoIndividual = new Chart(ctx, {
     datasets: [
       {
         label: "Conteúdos",
-        backgroundColor: '#FF5297',//["#F88E01", "#F359B3", "#84CC01", "#52D7D5", "#3E474E", "#3E474E", "#3E474E"],
+        backgroundColor: '#e0004f',//["#F88E01", "#F359B3", "#84CC01", "#52D7D5", "#3E474E", "#3E474E", "#3E474E"],
         data: [34, 34, 9, 5, 4]
       },
     ]
@@ -820,7 +820,7 @@ var desafiosIndividual = new Chart(ctx, {
     datasets: [
       {
         label: "Conteúdos",
-        backgroundColor: '#5F9300',//["#F88E01", "#F359B3", "#84CC01", "#52D7D5", "#3E474E", "#3E474E", "#3E474E"],
+        backgroundColor: '#1b8406',//["#F88E01", "#F359B3", "#84CC01", "#52D7D5", "#3E474E", "#3E474E", "#3E474E"],
         data: [38, 21, 19, 17, 16, 11, 1]
       },
     ]
@@ -931,6 +931,7 @@ var desafiosIndividual = new Chart(ctx, {
  * NUVEM DE PALAVRAS
  * DITADO DE PALAVRAS
  */
+anychart.licenseKey("fabrizziosoares.me-5132aa16-b19d68be");
 
 anychart.onDocumentReady(function () {
   var data = [
@@ -1006,15 +1007,15 @@ anychart.onDocumentReady(function () {
   
         .normal({
           fontFamily: 'Roboto',
-          fill: '#6AA301'
+          fill: '#1b8406'
         })
         // set settings for hovered state
         .hovered({
-          fill: '#F92D82'
+          fill: '#e0004f'
         })
         // set settings for selected state
         .selected({
-          fill: '#2BA2A0',
+          fill: '#107abc',
           fontWeight: 'bold'
         });
   
@@ -1078,15 +1079,15 @@ anychart.onDocumentReady(function () {
 
      .normal({
        fontFamily: 'Roboto',
-       fill: '#F92D82'
+       fill: '#e0004f'
      })
      // set settings for hovered state
      .hovered({
-       fill: '#F06C00'
+       fill: '#fa6400'
      })
      // set settings for selected state
      .selected({
-       fill: '#2BA2A0',
+       fill: '#107abc',
        fontWeight: 'bold'
      });
 
@@ -1111,7 +1112,7 @@ var erro = new Chart(ctx, {
     datasets: [
       {
         label: "Conteúdos",
-        backgroundColor: '#2AA2A0',//["#F88E01", "#F359B3", "#84CC01", "#52D7D5", "#3E474E", "#3E474E", "#3E474E"],
+        backgroundColor: '#107abc',//["#F88E01", "#F359B3", "#84CC01", "#52D7D5", "#3E474E", "#3E474E", "#3E474E"],
         data: [82, 3, 1, 13, 3, 1]
       },
     ]
@@ -1228,7 +1229,7 @@ var manutencaoAtiv = new Chart(ctx, {
     labels: ["Sim", "Não", ""],
     datasets: [
       {
-        backgroundColor: ["#6AA300", "#d3d3d3"],
+        backgroundColor: ["#1b8406", "#d3d3d3"],
         data: [76, 28]
       }
     ]
@@ -1383,15 +1384,15 @@ anychart.onDocumentReady(function () {
 
      .normal({
        fontFamily: 'Roboto',
-       fill: '#2BA2A0'
+       fill: '#107abc'
      })
      // set settings for hovered state
      .hovered({
-       fill: '#F92D82'
+       fill: '#e0004f'
      })
      // set settings for selected state
      .selected({
-       fill: '#6AA301',
+       fill: '#1b8406',
        fontWeight: 'bold'
      });
 

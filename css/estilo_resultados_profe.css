@@ -35,7 +35,7 @@
         height: 2.5em;
     }
     #sulp {
-        background-color: #84CC01;
+        background-color: #1b8406;
         left: 50%;
         top: 85%;
         width: 1em;
@@ -178,29 +178,29 @@
 }
 
 #nortep {
-    background-color: #F88E01;
+    background-color: #fa6400;
     position: absolute;
 }
 
 #nordestep {
-    background-color: #F88E01;
+    background-color: #fa6400;
     position: absolute;
 }
 
 #centro-oestep {
-    background-color: #F92D82;
+    background-color: #e0004f;
     /* width: 8em;
     height: 8em; */
     position: absolute;
 }
 
 #sudestep {
-    background-color: #2AA2A0;
+    background-color: #107abc;
     position: absolute;
 }
 
 #sulp {
-    background-color: #84CC01;
+    background-color: #1b8406;
     position: absolute;
 }
 

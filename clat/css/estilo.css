@@ -3,6 +3,25 @@ body {
     padding-top: 100px;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
+    color: #3e474f;
+}
+
+/*/* Array
+["#e0004f" - ROSA,
+"#fa6400" - LARANJA,
+"#1b8406" - VERDE,
+"#107abc"- AZUL,
+"#3e474f - CINZA"]*/
+a{
+    color: #107abc;
+}
+
+a:hover{
+    color: #fa6400;
+}
+
+.menu{
+    color: #3e474f !important;
 }
 
 
@@ -15,9 +34,10 @@ section {
     list-style-type: none;
 }
 
-/*Extra small devices (portrait phones, less than 576px)*/
 
-@media (max-width: 575.98px) {
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (max-width: 1000px) {
     .navbar .navbar-nav {
         display: inline-block;
         float: none;
@@ -27,10 +47,20 @@ section {
         text-align: center;
         margin: 2em;
     }
+
+    .texto__principal{
+        font-size: 1em !important;
+    }
+    
+
 }
 
-/*Small devices (landscape phones, 576px and up)*/
 
+.texto__principal{
+    font-size: 1.2em;
+}
+
+/*
 @media (min-width: 576px) and (max-width: 767.98px) {
     .navbar .navbar-nav {
         display: inline-block;
@@ -41,7 +71,7 @@ section {
         text-align: center;
         margin: 2em;
     }
-}
+}*/
 
 .areasColor {
     padding-top: 5em;
@@ -49,7 +79,7 @@ section {
 }
 
 #sobre {
-    background-color: #84CC01;
+    background-color: #fa6400; /*#1b8406;*/
     /*font-family: 'Poppins', sans-serif;*/
 }
 
@@ -62,8 +92,8 @@ section {
 }
 
 #menu li a:hover {
-    border-bottom: 3px solid #F359B3;
-    color: #F68C02;
+    border-bottom: 3px solid #e0004f;
+    color: #fa6400 !important;
 }
 
 #menu a:not([href]):not([tabindex]) {
@@ -81,7 +111,7 @@ section {
 }
 
 .titulo {
-    color: #2EA1B7;
+    color: #107abc;
 }
 
 .footer {
@@ -92,7 +122,7 @@ section {
 }
 
 .texto-clat {
-    color: #F359B3;
+    color: #e0004f;
     letter-spacing: 0.2em;
 }
 
@@ -120,10 +150,10 @@ h5, h6 {
 
 
 #pesquisa{
-    background-color: #F359B3;
+    background-color: #e0004f;
 }
 #midia{
-    background-color: #F88E01;
+    background-color: #1b8406;
 }
 
 .areaBranca {
@@ -133,7 +163,7 @@ h5, h6 {
 }
 
 .laranja {
-    color: #F88D02;
+    color: #fa6400;
 }
 
 .titulos__grafico_descricao{
@@ -145,6 +175,8 @@ h5, h6 {
     font-weight: 600;
     margin-top: 2em;
 }
+
+
 
 .fundo__claro{
     background-color:#f2f2f2;
@@ -158,3 +190,50 @@ h5, h6 {
     width:100%; 
     height:400px;
 }
+
+.pesquisas{
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: 1.2em;
+}
+
+.iconeLink{
+    font-size: 1.5em;
+    color: #107abc;
+    margin: 0.5em;
+}
+
+.margin__baixo{
+    margin-bottom: 1em;
+}
+
+.logo__imagem{
+    max-width: 120px; 
+    margin:1em;
+    width: 100%;
+}
+
+.imagem__card{
+    max-height: 200px; 
+    width:auto; 
+    margin-top:1em;
+}
+
+.post{
+    max-width: 600px;
+}
+
+.imagem__principal{
+    max-width: 1000px;
+    width: 100%;
+}
+
+.nomes{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.titulo__card{
+    font-size: 1em;
+}
+

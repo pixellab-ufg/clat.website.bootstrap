@@ -40,7 +40,7 @@
         height: 1.2em;
     }
     #sul {
-        background-color: #84CC01;
+        background-color: #1b8406;
         left: 50%;
         top: 85%;
         width: 1em;
@@ -223,29 +223,29 @@ p {
 }
 
 #norte {
-    background-color: #F88E01;
+    background-color: #fa6400;
     position: absolute;
 }
 
 #nordeste {
-    background-color: #F88E01;
+    background-color: #fa6400;
     position: absolute;
 }
 
 #centro-oeste {
-    background-color: #F92D82;
+    background-color: #e0004f;
     /* width: 8em;
     height: 8em; */
     position: absolute;
 }
 
 #sudeste {
-    background-color: #84CC01;
+    background-color: #1b8406;
     position: absolute;
 }
 
 #sul {
-    background-color: #84CC01;
+    background-color: #1b8406;
     position: absolute;
 }
 
@@ -274,32 +274,32 @@ p {
 }
 
 .lazul {
-    background-color: #2AA2A0;
+    background-color: #107abc;
 }
 
 .lazul:before {
-    background-color: #2AA2A0;
+    background-color: #107abc;
     content: 'PERFIL DOS PARTICIPANTES';
 }
 
 
 .lazul3:before {
-    background-color: #2AA2A0;
+    background-color: #107abc;
     content: 'ENSINO DURANTE A PANDEMIA';
 }
 
 
 .lverde {
-    background-color: #6AA300;
+    background-color: #1b8406;
 }
 
 .lverde:before {
-    background-color: #6AA300;
+    background-color: #1b8406;
     content: 'COMENTÁRIOS';
 }
 
 .lverde2:before {
-    background-color: #6AA300;
+    background-color: #1b8406;
     content: 'CLASSIFICAÇÃO DA ESCRITA INFANTIL';
 }
 
@@ -342,22 +342,22 @@ p {
 }
 
 .lrosa {
-    background-color: #F92D82;
+    background-color: #e0004f;
     margin-top: 10em;
 }
 
 .lrosa:before {
-    background-color: #F92D82;
+    background-color: #e0004f;
     content: 'ATIVIDADES REMOTAS';
 }
 
 .lrosa2:before {
-    background-color: #F92D82;
+    background-color: #e0004f;
     content: 'APLICAÇÃO DE DITADOS';
 }
 
 .lrosa3:before {
-    background-color: #F92D82;
+    background-color: #e0004f;
     content: 'COMENTÁRIOS';
 }
 .text_circle_black {
