@@ -237,3 +237,15 @@ h5, h6 {
     font-size: 1em;
 }
 
+.azul{
+    color: #107abc;
+}
+
+
+
+.fundo__azul{
+    background-color: #107abc;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+}
