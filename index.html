@@ -21,9 +21,36 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#menu" data-offset="0">
+
+
+<body data-spy="scroll" data-target="#menu" data-offset="0" cz-shortcut-listen="true">
+
+    <!--
+    <div id="acessibilidade">  
+        <ul id="atalhos">  
+            <li><a href="#main" accesskey="1">Conteúdo [1]</a></li>  
+            <li><a href="#menu" accesskey="2">Menu [2]</a></li>  
+            <li><Rodapé href="#footer" accesskey="3" >Rodapé[3]</a></li>  
+        </ul>  
+        <ul id="botoes">  
+            <li><a href="#" id="bt_contraste">alto contraste</a></li>  
+            <li><a href="acessibilidade.html"> Página de acessibilidade </a></li>  
+        </ul>  
+    </div>
+-->
+
+<!-- IDIOMA
 
     <div class="container">
+        <div class="row justify-content-end">
+            <button class="btn mx-1" id="br_button"> <img src="images/pt-br.png" alt="bandeira do Brasil"> PT-BR </button>
+            <button class="btn mx-1" id="eng_button"><img src="images/en-us.png" alt="bandeira EUA"> EN</button>
+        </div>
+    </div>
+-->
+
+
+    <header class="container">
 
         <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light justify-content-end fixed-top ">
             <a class="navbar-brand pl-5" href="#">
@@ -39,43 +66,44 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link menu" href="#sobre">Sobre</a>
+                        <a class="nav-link menu" href="#sobre" name="translate" caption="sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu" href="#equipe">Equipe</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link menu" href="#pesquisa">Pesquisa com usuários</a>
+                        <a class="nav-link menu" href="#equipe" name="translate" caption="equipe">Equipe</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link menu" href="#publicacoes">Publicações</a>
+                        <a class="nav-link menu" href="#pesquisa" name="translate" caption="pesquisa">Pesquisa com
+                            usuários</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu" href="#publicacoes" name="translate"
+                            caption="publicacoes">Publicações</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu" href="#contato">Contato</a>
+                        <a class="nav-link menu" href="#contato" name="translate" caption="contato">Contato</a>
                     </li>
 
                 </ul>
 
             </div>
         </nav>
-    </div>
 
+    </header>
 
     <section id="main" >
-       <div class="container-fluid d-flex justify-content-end">
+        <div class="container-fluid d-flex justify-content-end">
             <div class="row no-gutters align-items-center">
                 <!--<div class="col-lg-4 col-md col-sm capa">-->
                 <div class="col-lg-6 col-md-12">
-                    <img class="img-responsive imagem__principal" src="clat/images/desenho.svg"
-                        alt="figura de tablet">
+                    <img class="img-responsive imagem__principal" src="clat/images/desenho.svg" alt="figura de tablet">
                 </div>
 
                 <div class="col-lg-6 col-md-12 text-left texto__principal">
                     <p class="texto-clat"> CHILDREN LITERACY AID TOOL</p>
-                    <h1>Avaliação da escrita infantil</h1>
-                    <p>Pesquisa desenvolvida pelo PixelLab, no Doutorado em Ciência da Computação do Instituto de
+                    <h1 name="translate" caption="title_main">Avaliação da escrita infantil</h1>
+                    <p name="translate" caption="intro_main">Pesquisa desenvolvida pelo PixelLab, no Doutorado em Ciência da Computação do Instituto de
                         Informática - Universidade Federal Goiás. O objetivo é desenvolver um método para auxiliar na
                         condução de sessões automatizadas de ditado de palavras para crianças em fase inicial de
                         alfabetização. </p>
@@ -87,55 +115,63 @@
         </div>
     </section>
 
+    <section class="container-fluid mx-auto" id="sobre">
+            <div class="container areasColor">
+                <div class="row border rounded areaBranca p-md-5 pt-5">
+                    <div class="col">
+                        <h1>Sobre</h1>
 
-    <div class="container-fluid mx-auto" id="sobre">
-        <div class="container areasColor">
-            <div class="row border rounded areaBranca p-md-5 pt-5">
-                <div class="col">
-                    <h1>Sobre</h1>
+                        <p>O projeto <i>Children Literacy Aid Tool</i> (CLAT) surge como uma proposta de uso da
+                            tecnologia
+                            para auxiliar o processo de alfabetização infantil, especialmente na avaliação da escrita.
+                        </p>
 
-                    <p>O projeto <i>Children Literacy Aid Tool</i> (CLAT) surge como uma proposta de uso da tecnologia
-                        para auxiliar o processo de alfabetização infantil, especialmente na avaliação da escrita.</p>
+                        <h2>História</h2>
+                        <p>No Pacto Nacional na Idade Certa (PNAIC), algumas Secretarias Municipais de Educação optaram
+                            por
+                            acompanhar o desenvolvimento do programa a partir de avaliações periódicas da escrita das
+                            crianças.
+                        <p>Um determinado número de avaliações eram solicitadas aos professores bimestralmente. No
+                            entanto,
+                            por serem aplicadas individualmente, diversos professores encontravam dificuldades para a
+                            realização dessas avaliações, considerando:</p>
+                        <ul>
+                            <li>Salas de alfabetização com 20 ou mais crianças.</li>
+                            <li>Necessidade de apoio de outros profissionais da escola para atividade paralela com o
+                                restante da turma enquanto o(a) professor(a) aplicava a avaliação individualmente.</li>
+                            <li>Organização manual dos registros das crianças.</li>
+                            <li>Dificuldades de compartilhamento dos resultados com os diferentes profissionais que
+                                atuam
+                                com crianças nessa fase (psicólogos, fonoaudiólogos, psicopedagogos, entre outros).
+                            </li>
+                        </ul>
 
-                    <h2>História</h2>
-                    <p>No Pacto Nacional na Idade Certa (PNAIC), algumas Secretarias Municipais de Educação optaram por
-                        acompanhar o desenvolvimento do programa a partir de avaliações periódicas da escrita das
-                        crianças.
-                    <p>Um determinado número de avaliações eram solicitadas aos professores bimestralmente. No entanto,
-                        por serem aplicadas individualmente, diversos professores encontravam dificuldades para a
-                        realização dessas avaliações, considerando:</p>
-                    <ul>
-                        <li>Salas de alfabetização com 20 ou mais crianças.</li>
-                        <li>Necessidade de apoio de outros profissionais da escola para atividade paralela com o
-                            restante da turma enquanto o(a) professor(a) aplicava a avaliação individualmente.</li>
-                        <li>Organização manual dos registros das crianças.</li>
-                        <li>Dificuldades de compartilhamento dos resultados com os diferentes profissionais que atuam
-                            com crianças nessa fase (psicólogos, fonoaudiólogos, psicopedagogos, entre outros). </li>
-                    </ul>
-
-                    <p> Embora o projeto CLAT tenha surgido a partir do cenário do PNAIC, programa que foi descontinuado
-                        pelo governo federal recentemente, a realização de avaliações de escrita infantil continua sendo
-                        uma atividade cotidiana em salas de alfabetização. </p>
+                        <p> Embora o projeto CLAT tenha surgido a partir do cenário do PNAIC, programa que foi
+                            descontinuado
+                            pelo governo federal recentemente, a realização de avaliações de escrita infantil continua
+                            sendo
+                            uma atividade cotidiana em salas de alfabetização. </p>
 
 
-                    <h2>Nossa Proposta</h2>
-                    <p>Estamos desenvolvendo um método para que as avaliações de escrita - tradicionalmente realizadas
-                        em papel - possam ser feitas em um ambiente digital. Assim, o especialista cria sessões de
-                        ditado, define a lista de palavras e a aplicação dita essas palavras para a criança. </p>
+                        <h2>Nossa Proposta</h2>
+                        <p>Estamos desenvolvendo um método para que as avaliações de escrita - tradicionalmente
+                            realizadas
+                            em papel - possam ser feitas em um ambiente digital. Assim, o especialista cria sessões de
+                            ditado, define a lista de palavras e a aplicação dita essas palavras para a criança. </p>
 
-                    <p>O diferencial da nossa aplicação é que captura a escrita à mão, dependendo do dispositivo
-                        utilizado, a criança pode escrever com o próprio dedo ou com apoio de canetas <i>touch</i>
-                        (mesas digitais ou tablets). </p>
+                        <p>O diferencial da nossa aplicação é que captura a escrita à mão, dependendo do dispositivo
+                            utilizado, a criança pode escrever com o próprio dedo ou com apoio de canetas <i>touch</i>
+                            (mesas digitais ou tablets). </p>
 
-                    <p>CLAT armazena sinais estratégicos de avaliação para os especialistas, além do traçado manual da
-                        criança, também os gestos que ela realizou para leitura do que escreveu. Ao final da atividade,
-                        um relatório é gerado, similar ao que os especialistas usam na abordagem manual. </p>
+                        <p>CLAT armazena sinais estratégicos de avaliação para os especialistas, além do traçado manual
+                            da
+                            criança, também os gestos que ela realizou para leitura do que escreveu. Ao final da
+                            atividade,
+                            um relatório é gerado, similar ao que os especialistas usam na abordagem manual. </p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-    </div>
-
+    </section>
 
     <section id="equipe" class="container-fluid">
         <div class="container pt-5">
@@ -198,7 +234,8 @@
             </div>
             <div class="d-flex justify-content-center">
                 <a href="https://www.inf.ufg.br/" target="_blank">
-                    <img class="img-responsive logo__imagem" src="clat/images/inf.png" alt="logo do Instituto de Informática">
+                    <img class="img-responsive logo__imagem" src="clat/images/inf.png"
+                        alt="logo do Instituto de Informática">
                 </a>
             </div>
 
@@ -222,9 +259,11 @@
                         e, principalmente, como são feitas as avaliações de escrita infantil. </p>
 
                     <p class="nomes">Confira a síntese das pesquisas nas páginas abaixo: </p>
-                    <i class="fas fa-mouse iconeLink"></i><a href="clat/resultado_professores.html" class="pesquisas"> Pesquisa com profissionais</a>
+                    <i class="fas fa-mouse iconeLink"></i><a href="clat/resultado_professores.html" class="pesquisas">
+                        Pesquisa com profissionais</a>
                     <br>
-                    <i class="fas fa-mouse iconeLink"></i><a href="clat/resultado_pais.html" class="pesquisas"> Pesquisa com mães, pais ou responsáveis</a></p>
+                    <i class="fas fa-mouse iconeLink"></i><a href="clat/resultado_pais.html" class="pesquisas"> Pesquisa
+                        com mães, pais ou responsáveis</a></p>
                     <br>
                 </div>
             </div>
@@ -248,18 +287,40 @@
                 <br />
 
                 <li>
-                    MOMBACH, Jaline; ROSSI, Fábio; FERREIRA, FELIX, Juliana; SOARES, Fabrizzio.Remote Assessing
-                    Children’s Handwriting Spellingon Mobile Devices. In: IEEE 44st Annual Computer Software and
-                    Applications Conference (COMPSAC). 2020. <span class="d-none d-sm-block">DOI:
-                        10.1109/COMPSAC48688.2020.00-80</span>
+                    MOMBACH, Jaline; FERREIRA, Cristiane; FELIX, Juliana; SALVINI, Rogerio; SOARES, Fabrizzio.
+                    Mirrored and Rotated Letters in Children Spellings:An Automatic Analysis Approach. In: IEEE
+                    Canadian Conference of Electrical and Computer Engineering (CCECE). 2020.
+                    <span class="d-none d-sm-block"> DOI: <a
+                        href="https://doi.org/10.1109/CCECE47787.2020.9255765" target="blank"
+                        class="">10.1109/CCECE47787.2020.9255765</a></span>
                 </li>
 
                 <br />
 
                 <li>
-                    MOMBACH, Jaline; FERREIRA, Cristiane; FELIX, Juliana; SALVINI, Rogerio; SOARES, Fabrizzio.
-                    Mirrored and Rotated Letters in Children Spellings:An Automatic Analysis Approach. In: IEEE
-                    Canadian Conference of Electrical and Computer Engineering (CCECE). 2020.
+                    MOMBACH, Jaline; ROSSI, Fábio; FERREIRA, FELIX, Juliana; SOARES, Fabrizzio.Remote Assessing
+                    Children’s Handwriting Spellingon Mobile Devices. In: IEEE 44st Annual Computer Software and
+                    Applications Conference (COMPSAC). 2020.  <span class="d-none d-sm-block"> DOI: <a
+                        href="https://doi.org/10.1109/COMPSAC48688.2020.00-80" target="blank"
+                        class="">10.1109/COMPSAC48688.2020.00-80</a></span>
+                </li>
+
+                <br />
+
+                <li>
+                    MOMBACH, Jaline; FONSECA, Afonso; NASCIMENTO, Thamer; RODRIGUES, Welington; GRESSLER,
+                    Henrique; ROSSI, Fábio; SOARES, Fabrizzio.
+                    A new approach to performing paper-based children's spelling tests on mobile devices. In:
+                    IEEE International Conference on Systems, Man and Cybernetics (SMC). 2020.
+                </li>
+
+                <br />
+
+                <li>
+                    MOMBACH, Jaline; SOARES, Fabrizzio. Aplicativo para sondagem de hipótese de escrita infantil remota. In:
+                    Workshop de Ferramentas e Aplicações - Simpósio Brasileiro de Sistemas Multimídia e Web (WebMedia). 2020. <span class="d-none d-sm-block"> URL: <a
+                        href="https://sol.sbc.org.br/index.php/webmedia_estendido/article/view/13072" target="blank"
+                        class="">https://sol.sbc.org.br/index.php/webmedia_estendido/article/view/13072</a></span>
                 </li>
 
             </ul>
@@ -267,12 +328,28 @@
             <h2>Artigos aceitos</h2> <br />
             <ul class="listas">
                 <li>
-                    MOMBACH, Jaline; FONSECA, Afonso; NASCIMENTO, Thamer; RODRIGUES, Welington; GRESSLER,
-                    Henrique; ROSSI, Fábio; SOARES, Fabrizzio.
-                    A new approach to performing paper-based children's spelling tests on mobile devices. In:
-                    IEEE International Conference on Systems, Man and Cybernetics (SMC). 2020.
+                    MOMBACH, Jaline; SOARES, Fabrizzio.
+                    Designing an App for Remotely Children's Spelling Assessment. In:
+                    23rd International Conference on Human-Computer Interaction (HCI International). 2021.
                 </li>
             </ul>
+
+            <h2>Premiação</h2> <br />
+            <ul class="listas">
+                <li>
+                    <b>Melhor trabalho do V Prêmio Luiz Fernando de Computação, oferecido pela Comissão Especial da SBC para Sistemas Multimídia e Web (CE-WebMedia)</b> <br>
+
+                    MOMBACH, Jaline; SOARES, Fabrizzio. Aplicativo para sondagem de hipótese de escrita infantil remota. In:
+                    Workshop de Ferramentas e Aplicações - Simpósio Brasileiro de Sistemas Multimídia e Web (WebMedia). 2020. <span class="d-none d-sm-block"> URL: <a
+                        href="https://sol.sbc.org.br/index.php/webmedia_estendido/article/view/13072" target="blank"
+                        class="">https://sol.sbc.org.br/index.php/webmedia_estendido/article/view/13072</a></span>
+                </li>
+            </ul>
+            <br>
+            <div class="d-flex justify-content-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/G7z57KU1f6g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
         </div>
         <br>
     </section>
@@ -283,78 +360,129 @@
         <div class="container areasColor">
             <div class="row border rounded areaBranca p-md-5 pt-5">
                 <div class="col">
-                    <h1> Na mídia </h1> <br/>
+                    <h1> Na mídia </h1> <br />
                 </div>
 
                 <div class="row">
 
-
-                <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
-                    <div class="card mx-auto h-100">
-                        <img class="card-img-top img-fluid mx-auto d-block img-thumbnail imagem__card"
-                            src="https://files.cercomp.ufg.br/weby/up/1218/o/20190215_141719_(1).jpg"
-                            alt="Criança no tablet">
-                        <div class="card-body">
-                            <h2 class="card-title titulo__card"><a
-                                    href="https://inf.ufg.br/n/127164-doutoranda-do-inf-ufg-cria-prototipo-para-auxiliar-na-alfabetizacao-de-criancas"
-                                    >Doutoranda do INF-UFG cria protótipo para auxiliar na
-                                    alfabetização de crianças </a></h2>
-                            <p class="card-text">Pesquisadora do INF fala sobre o seu estudo em
-                                tecnologias
-                                para alfabetização com foco em avaliações de escrita. Orientada pelo professor
-                                Fabrizzio
-                                Soares, o principal objetivo...</p>
-                            <a href="https://inf.ufg.br/n/127164-doutoranda-do-inf-ufg-cria-prototipo-para-auxiliar-na-alfabetizacao-de-criancas"
-                                target="_blank" class="btn btn-success float-right">Leia no site do INF</a>
+                    <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+                        <div class="card mx-auto h-100">
+                            <img class="card-img-top img-fluid mx-auto d-block img-thumbnail imagem__card"
+                                src="clat/images/Clat_inf_ufg.svg"
+                                alt="logo do aplicativo">
+                            <div class="card-body">
+                                <h2 class="card-title titulo__card"><a
+                                        href="https://www.ufg.br/n/136840-app-criado-por-estudante-do-inf-e-premiado-no-web-media-2020">App criado por estudante do INF é premiado no Web Media 2020
+                                    </a></h2>
+                                <p class="card-text">Ferramenta está em fase de desenvolvimento e tem o objetivo de auxiliar na alfabetização de crianças. O projeto de um aplicativo...</p>
+                                <a href="https://www.ufg.br/n/136840-app-criado-por-estudante-do-inf-e-premiado-no-web-media-2020"
+                                    target="_blank" class="btn btn-success float-right">Leia no site da UFG</a>
+                            </div>
                         </div>
                     </div>
+
+
+
+                    <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+                        <div class="card mx-auto h-100">
+                            <img class="card-img-top img-fluid mx-auto d-block img-thumbnail imagem__card"
+                                src="clat/images/capas_site_inf_.png"
+                                alt="foto da tela inicial do app">
+                            <div class="card-body">
+                                <h2 class="card-title titulo__card"><a
+                                        href="https://www.inf.ufg.br/n/136746-projeto-de-doutorado-de-aluna-do-instituto-de-informatica-da-ufg-recebe-premio-lf-no-web-media-2020">Projeto de doutorado de aluna do Instituto de Informática da UFG recebe prêmio LF no Web Media 2020</a></h2>
+                                <p class="card-text">O Projeto intitulado Children Literacy Aid Tool (CLAT) - Aplicativo para sondagem de hipótese de escrita infantil...</p>
+                                <a href="https://www.inf.ufg.br/n/136746-projeto-de-doutorado-de-aluna-do-instituto-de-informatica-da-ufg-recebe-premio-lf-no-web-media-2020"
+                                    target="_blank" class="btn btn-success float-right">Leia no site do INF</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+                        <div class="card mx-auto h-100">
+                            <img class="card-img-top img-fluid mx-auto d-block img-thumbnail imagem__card"
+                                src="clat/images/adufg.png" alt="imagem do app">
+                            <div class="card-body">
+                                <h2 class="card-title titulo__card"><a
+                                        href="https://www.adufg.org.br/noticias/2-noticias/8991-adufg-cientifica-software-em-desenvolvimento-pela-ufg-pode-auxiliar-na-alfabetizacao-infantil">
+                                        Adufg Científica: Software em desenvolvimento pela UFG pode auxiliar na alfabetização infantil</a></h2>
+                                <p class="card-text">Orientada pelo professor Fabrizzio Soares, do Instituto de Informática da Universidade Federal de Goiás (INF-UFG), a doutoranda Jaline Mombach... </p>
+                                <a href="https://www.adufg.org.br/noticias/2-noticias/8991-adufg-cientifica-software-em-desenvolvimento-pela-ufg-pode-auxiliar-na-alfabetizacao-infantil"
+                                    target="_blank" class="btn btn-success float-right">Veja a entrevista</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+                        <div class="card mx-auto h-100">
+                            <img class="card-img-top img-fluid mx-auto d-block img-thumbnail imagem__card"
+                                src="clat/images/programa_cet.svg" alt="imagem do app">
+                            <div class="card-body">
+                                <h2 class="card-title titulo__card"><a
+                                        href="https://redenacionalderadio.com.br/programas/ciencia-e-tecnologia/13-07-20-beatriz-evaristo-c-t-ferramenta-alfabetizacao.mp3/view">
+                                        13/07 - Pesquisadora da UFG cria ferramenta para
+                                        avaliar desenvolvimento da escrita de alunos em alfabetização</a></h2>
+                                <p class="card-text">Avaliar o desenvolvimento da escrita de cada
+                                    aluno
+                                    durante a alfabetização pode ser uma tarefa trabalhosa para educadores...</p>
+                                <a href="https://redenacionalderadio.com.br/programas/ciencia-e-tecnologia/13-07-20-beatriz-evaristo-c-t-ferramenta-alfabetizacao.mp3/view"
+                                    target="_blank" class="btn btn-success float-right">Ouça a notícia</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+                        <div class="card mx-auto h-100">
+                            <img class="card-img-top img-fluid mx-auto d-block img-thumbnail imagem__card"
+                                src="https://files.cercomp.ufg.br/weby/up/1218/o/20190215_141719_(1).jpg"
+                                alt="Criança no tablet">
+                            <div class="card-body">
+                                <h2 class="card-title titulo__card"><a
+                                        href="https://inf.ufg.br/n/127164-doutoranda-do-inf-ufg-cria-prototipo-para-auxiliar-na-alfabetizacao-de-criancas">Doutoranda
+                                        do INF-UFG cria protótipo para auxiliar na
+                                        alfabetização de crianças </a></h2>
+                                <p class="card-text">Pesquisadora do INF fala sobre o seu estudo em
+                                    tecnologias
+                                    para alfabetização com foco em avaliações de escrita. Orientada pelo professor
+                                    Fabrizzio
+                                    Soares, o principal objetivo...</p>
+                                <a href="https://inf.ufg.br/n/127164-doutoranda-do-inf-ufg-cria-prototipo-para-auxiliar-na-alfabetizacao-de-criancas"
+                                    target="_blank" class="btn btn-success float-right">Leia no site do INF</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+                        <div class="card mx-auto h-100">
+                            <img class="card-img-top img-fluid mx-auto d-block img-thumbnail imagem__card"
+                                src="https://files.cercomp.ufg.br/weby/up/243/o/Inf_UFG.png"
+                                alt="foto da tela inicial do app">
+                            <div class="card-body">
+                                <h2 class="card-title titulo__card"><a
+                                        href="https://jornal.ufg.br/n/127223-pesquisa-da-ufg-cria-tecnologia-para-auxiliar-na-alfabetizacao-de-criancas">Pesquisa
+                                        da UFG cria tecnologia para auxiliar na
+                                        alfabetização
+                                        de crianças </a></h2>
+                                <p class="card-text">Com o foco inicial na aprendizagem e,
+                                    especialmente, na
+                                    avaliação da escrita de crianças em fase de alfabetização, a tecnologia
+                                    criada
+                                    pela
+                                    pesquisadora...</p>
+                                <a href="https://jornal.ufg.br/n/127223-pesquisa-da-ufg-cria-tecnologia-para-auxiliar-na-alfabetizacao-de-criancas"
+                                    target="_blank" class="btn btn-success float-right">Leia no jornal da UFG</a>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
 
 
 
-                <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
-                    <div class="card mx-auto h-100">
-                        <img class="card-img-top img-fluid mx-auto d-block img-thumbnail imagem__card"
-                            src="https://files.cercomp.ufg.br/weby/up/243/o/Inf_UFG.png"
-                            alt="foto da tela inicial do app">
-                        <div class="card-body">
-                            <h2 class="card-title titulo__card"><a
-                                    href="https://jornal.ufg.br/n/127223-pesquisa-da-ufg-cria-tecnologia-para-auxiliar-na-alfabetizacao-de-criancas">Pesquisa da UFG cria tecnologia para auxiliar na
-                                    alfabetização
-                                    de crianças </a></h2>
-                            <p class="card-text">Com o foco inicial na aprendizagem e,
-                                especialmente, na
-                                avaliação da escrita de crianças em fase de alfabetização, a tecnologia
-                                criada
-                                pela
-                                pesquisadora Jaline Mombach...</p>
-                            <a href="https://jornal.ufg.br/n/127223-pesquisa-da-ufg-cria-tecnologia-para-auxiliar-na-alfabetizacao-de-criancas"
-                                target="_blank" class="btn btn-success float-right">Leia no jornal da UFG</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
-                    <div class="card mx-auto h-100">
-                        <img class="card-img-top img-fluid mx-auto d-block img-thumbnail imagem__card" src="clat/images/programa_cet.svg" alt="imagem do app">
-                        <div class="card-body">
-                            <h2 class="card-title titulo__card"><a
-                                    href="https://redenacionalderadio.com.br/programas/ciencia-e-tecnologia/13-07-20-beatriz-evaristo-c-t-ferramenta-alfabetizacao.mp3/view"> 13/07 - Pesquisadora da UFG cria ferramenta para
-                                    avaliar desenvolvimento da escrita de alunos em alfabetização</a></h2>
-                            <p class="card-text">Avaliar o desenvolvimento da escrita de cada
-                                aluno
-                                durante a alfabetização pode ser uma tarefa trabalhosa para educadores...</p>
-                            <a href="https://redenacionalderadio.com.br/programas/ciencia-e-tecnologia/13-07-20-beatriz-evaristo-c-t-ferramenta-alfabetizacao.mp3/view"
-                                target="_blank" class="btn btn-success float-right">Ouça a notícia</a>
-                        </div>
-                    </div>
-                </div>
             </div>
-
-
-
         </div>
-    </div>
     </div>
 
 
@@ -404,8 +532,6 @@
     </div>
 
 
-
-
     <!-- Footer -->
     <footer class="font-small footer bg-light">
 
@@ -422,6 +548,7 @@
 
 
 
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -431,6 +558,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+    <script src="js/traducao.js"></script>
+
+    <!-- <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin=”anonymous”></script>-->
 
 
 

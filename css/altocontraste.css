@@ -3,7 +3,8 @@ body {
     padding-top: 100px;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
-    color: #3e474f;
+    color: white;
+    background-color:black;
 }
 
 /*/* Array
@@ -16,7 +17,7 @@ a{
     color: #107abc;
 }
 
-a:focus, a:hover{
+a:hover{
     color: #fa6400;
 }
 
@@ -91,7 +92,7 @@ section {
     padding-left: 1em;
 }
 
-#menu li a:hover , #menu li a:focus{
+#menu li a:hover {
     border-bottom: 3px solid #e0004f;
     color: #fa6400 !important;
 }
