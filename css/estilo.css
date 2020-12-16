@@ -134,6 +134,18 @@ h1 {
     margin-top: 1em;
 }
 
+.titulos_h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-top: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 23px;
+}
+
+.negrito{
+    font-weight: 600;
+}
 h2, h3, h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;

@@ -16,7 +16,7 @@ a{
     color: #107abc;
 }
 
-a:focus, a:hover{
+a:hover{
     color: #fa6400;
 }
 
@@ -91,7 +91,7 @@ section {
     padding-left: 1em;
 }
 
-#menu li a:hover , #menu li a:focus{
+#menu li a:hover {
     border-bottom: 3px solid #e0004f;
     color: #fa6400 !important;
 }
@@ -134,6 +134,18 @@ h1 {
     margin-top: 1em;
 }
 
+.titulos_h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-top: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 23px;
+}
+
+.negrito{
+    font-weight: 600;
+}
 h2, h3, h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
