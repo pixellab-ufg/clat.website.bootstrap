@@ -9,7 +9,7 @@
    height="733.63"
    viewBox="0 0 874.11 733.63"
    version="1.1"
-   sodipodi:docname="desenho.svg"
+   sodipodi:docname="desenho_novo2.svg"
    inkscape:version="1.1.2 (0a00cf5, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -615,8 +615,8 @@
   <title
      id="title24">connected</title>
   <path
-     style="fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:1.00225px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 95.226444,410.55384 C -59.571622,741.41007 859.903,636.44696 808.90729,351.13441 833.20764,92.937131 613.02196,190.73985 394.21693,131.54659 35.457192,34.491424 150.2086,293.03824 95.226444,410.55384 Z"
+     style="fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.882503px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 132.4992,401.82222 C -3.803666,693.14791 805.81257,600.72573 760.9098,349.50219 782.30675,122.1542 588.42876,208.2715 395.76645,156.15062 79.87115,70.691559 180.91211,298.34732 132.4992,401.82222 Z"
      id="path5232"
      sodipodi:nodetypes="scss" />
   <image
@@ -2565,9 +2565,9 @@ b7ibK2/MzMzMzMzMzO4CSb9U0n8i6TNJj7dff+q2z2VmZmZmZmZmZi+R9I9K+qPb8Oanb/s8ZmZm
 ZmZmZmb2BpJ+jaQ/ctvnMDMzMzMzs5v1/wO8QFHhQnZcgQAAAABJRU5ErkJggg==
 "
      id="image4301"
-     x="358.11957"
-     y="604.54071"
-     transform="rotate(-8.0903588)" />
+     x="399.26132"
+     y="562.27869"
+     transform="rotate(-4.5042062)" />
   <image
      width="92.198166"
      height="32.841038"
@@ -10898,12 +10898,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAANx7A7W7hLh28vWIAAAAAElFTkSuQmCC
 "
      id="image91617"
-     x="223.10542"
-     y="589.3894"
+     x="275.27954"
+     y="570.57758"
      transform="rotate(-5.8139562)" />
   <g
      id="g3821"
-     transform="rotate(-1.633494,5170.703,-5983.2394)">
+     transform="rotate(-1.633494,5739.7349,-6707.1792)">
     <g
        id="g3947-8"
        transform="matrix(2.2376142,0,0,2.1982508,-163.3489,-114.69313)">
