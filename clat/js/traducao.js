@@ -9,7 +9,7 @@ function getLangResources() {
   br["equipe"] = "Equipe";
   en["equipe"] = "Team";
 
-  br["pesquisa"] = "Pesquisa";
+  br["pesquisa"] = "Coleta de dados";
   en["pesquisa"] = "Survey";
 
   br["contato"] = "Contato";
