@@ -22,12 +22,12 @@ function getLangResources() {
   en["title_main"] = "Children's early spelling assessment";
 
   br["intro_main"] =
-    "Pesquisa desenvolvida pelo PixelLab, no Instituto de Informática da Universidade Federal de Goiás. O nosso objetivo é desenvolver um meio para que as avaliações de escrita inicial infantil, usualmente feitas com lápis e papel, possam também ocorrer em dispositivos com telas sensíveis ao toque.";
+    "Pesquisa desenvolvida pelo PixelLab, no Instituto de Informática da Universidade Federal de Goiás. O objetivo foi desenvolver um meio para que as avaliações de escrita inicial infantil, usualmente feitas com lápis e papel, pudessem também ocorrer em dispositivos com telas sensíveis ao toque.";
   en["intro_main"] =
     "Research developed by PixelLab, at the Computer Science Institute - Federal University of Goiás, Brazil. We aim to develop a model for children's early spelling assessments, usually done with pencil and paper, to be also performed on touchscreens devices.";
 
   br["page_sobre_text"] =
-    "O projeto Children Literacy Aid Tools (CLAT) surge como uma proposta de uso da tecnologia para auxiliar a fase de alfabetização infantil, especialmente na avaliação da escrita.";
+    "O projeto Children Literacy Aid Tools (CLAT) surgiu como uma proposta de uso da tecnologia para auxiliar a fase de alfabetização infantil, especialmente na avaliação da escrita.";
   en["page_sobre_text"] =
     "Children Literacy Aid Tool (CLAT) project emerges as a proposal to use technology to assist the child literacy process, especially in the evaluation of writing.";
 
@@ -61,7 +61,7 @@ function getLangResources() {
   en["title_nossaproposta"] = "Our Proposal";
 
   br["text_nossaproposta"] =
-    "Estamos desenvolvendo um meio para que as avaliações de escrita - tradicionalmente realizadas em papel - possam ser feitas em um ambiente digital também. Assim, o especialista cria atividades de escrita inicial a aplicação captura o registro manual da criança. O diferencial da nossa aplicação é que capturamos a escrita à mão e os especialistas podem personalizar completamente a atividade, inserindo a sua própria voz e figuras. Dependendo do dispositivo utilizado, a criança pode escrever com o próprio dedo ou com apoio de canetas sensíveis ao toque (mesas digitais, tablets ou smartphones).";
+    "Desenvolvemos um meio para que as avaliações de escrita - tradicionalmente realizadas em papel - possam ser feitas em um ambiente digital também. Assim, o especialista cria atividades de escrita inicial a aplicação captura o registro manual da criança. O diferencial da nossa aplicação é que capturamos a escrita à mão e os especialistas podem personalizar completamente a atividade, inserindo a sua própria voz e figuras. Dependendo do dispositivo utilizado, a criança pode escrever com o próprio dedo ou com apoio de canetas sensíveis ao toque (mesas digitais, tablets ou smartphones).";
   en["text_nossaproposta"] =
     "We are developing a mode for spelling assessments - traditionally done on paper - can be done in a digital environment as well. Thus, the professional creates early spelling activities, and the app captures the child's handwritten record. Our differential is that we capture the handwriting and the experts can completely customize the activity by inserting their own voices and pictures. Depending on the device used, the child can write with their own finger or with support from touch-sensitive pens (digital tablets, tablets or smartphones).";
 
@@ -77,6 +77,9 @@ function getLangResources() {
 
   br["student"] = "Discente";
   en["student"] = "Student";
+
+  br["egressa"] = "Egressa";
+  en["egressa"] = "Alumni";
 
   br["teacher"] = "Professora Colaboradora";
   en["teacher"] = "Supervisor";
