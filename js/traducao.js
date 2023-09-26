@@ -70,6 +70,15 @@ function getLangResources() {
   en["text_nossap2"] =
     "CLAT registers strategic evaluation signs for the specialists, besides the child's manual tracing, also the gestures she made to read what she wrote. When the activity is over, the application generates a report. This report is similar to what the experts use in the paper-based approach.";
 
+  br["title_tese"] = "Tese Desenvolvida";
+  en["title_tese"] = "PhD Thesis";
+
+  br["text_tese"] =
+    "MOMBACH, J. G. CLAT: arcabouço conceitual e ferramenta de apoio à avaliação da escrita inicial infantil por meio de dispositivos móveis. 2023. 246 f. Tese (Doutorado em Ciência da Computação) - Universidade Federal de Goiás, Goiânia, 2022.";
+
+  en["text_tese"] =
+    "Mombach, J. G. (2022). CLAT: a conceptual framework and aid tool for assessing children's early spelling on mobile devices. PhD Thesis, Federal University of Goiás, Goiânia.";
+
   br["apresentacoes"] = "Apresentações";
   en["apresentacoes"] = "Presentation";
   br["apoio"] = "Apoio";
